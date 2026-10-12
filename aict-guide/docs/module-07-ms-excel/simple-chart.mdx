@@ -1,0 +1,149 @@
+---
+title: "Lesson 7.11: Making a Simple Chart"
+sidebar_label: "7.11 Making a Simple Chart"
+sidebar_position: 11
+---
+
+## Goal
+
+By the end of this lesson, you can make a column chart from a small table, give it a title, and move and resize it.
+
+## Why It Matters
+
+A list of numbers is hard to compare at a glance. A chart turns the numbers into a picture. A shopkeeper can see the best day of the week in one look. A family can see where most of the monthly money goes.
+
+```mermaid
+flowchart LR
+    accTitle: Steps to make a column chart
+    accDescr: Select the data. Open the Insert tab and select Recommended Charts. Choose a column chart and select OK. Then type a chart title.
+    A[Select the data] --> B[Insert tab]
+    B --> C[Recommended Charts]
+    C --> D[All Charts]
+    D --> E[Column]
+    E --> F[OK]
+    F --> G[Type a title]
+```
+
+**Diagram in words:** Select the data, then go to Insert, Recommended Charts, All Charts and Column, and select OK. Last, type a title for the chart.
+
+## Key Terms
+
+| Term | Simple meaning |
+|------|----------------|
+| Chart | A picture made from numbers. It helps you compare them quickly. |
+| Column chart | A chart with standing bars. A taller column means a bigger number. |
+| Insert tab | A tab on the ribbon. You use it to add things, like a chart, to the sheet. |
+| Recommended Charts | A button on the Insert tab. It opens a window with charts for your data. |
+| All Charts | A tab in that window. It shows every type of chart. |
+| Chart title | The name at the top of the chart. It tells people what the chart shows. |
+| Sizing handles | Small marks on the edge of a selected chart. You drag them to change its size. |
+
+## Teacher Demo
+
+Before class, open a new blank workbook (see [Lesson 7.1](starting-excel.mdx)). Type these shop sales for one week, starting in cell A1.
+
+| | A | B |
+|---|---|---|
+| **1** | Day | Sales (Rs) |
+| **2** | Monday | 4500 |
+| **3** | Tuesday | 3800 |
+| **4** | Wednesday | 5200 |
+| **5** | Thursday | 4100 |
+| **6** | Friday | 6000 |
+| **7** | Saturday | 7300 |
+
+**Make the chart**
+
+1. Drag from cell A1 to cell B7. Include the headings. *Both columns are selected.*
+2. Select the **Insert** tab. *The class sees the Insert tab buttons.*
+3. Select **Recommended Charts**. *The **Insert Chart** window opens.*
+4. Select the **All Charts** tab. *The class sees all the chart types.*
+5. Select **Column**.
+
+   :::warning[UNVERIFIED]
+
+   Excel 2016/2019 shows several kinds of column chart. Choosing the first one, **Clustered Column**, could not be confirmed in official documentation for Excel 2016/2019. Test it on a lab computer before teaching.
+
+   :::
+
+6. Select **OK**. *A column chart appears on the sheet. Each day has its own column.*
+7. Point to the tallest column. Say: "Saturday had the most sales, Rs 7300. Tuesday had the least, Rs 3800."
+
+:::info[Screenshot to add]
+
+The Insert Chart window with the All Charts tab open and Column selected.
+
+:::
+
+**Give the chart a title**
+
+8. In the chart, select the **Chart Title** box. *The title is selected.*
+9. Select the title again. Drag over the words in it to select them.
+10. Type **Weekly Sales**. *The new title shows at the top of the chart.*
+11. Say: "If you see no title box, select the **+** sign at the top-right of the chart. Then select the **Chart Title** check box."
+
+**Move and resize the chart**
+
+12. Point to an empty part of the chart. Drag the chart to the right of the table. *The chart moves. The table is no longer covered.*
+13. Select the chart. Drag a sizing handle at a corner outwards. *The chart gets bigger.*
+
+    :::warning[UNVERIFIED]
+
+    Steps 12 and 13 are confirmed by Microsoft for Excel 2021 and newer only. They could not be confirmed for Excel 2016/2019. Test them on a lab computer before teaching.
+
+    :::
+
+14. Save the workbook with the name **Sales Chart** (see [Lesson 7.2](entering-editing-saving-data.mdx)).
+15. Say: "Excel has other charts too, like a pie chart. In this course we use column charts."
+
+## Student Task
+
+Open a new blank workbook. Type this table of monthly home expenses, starting in cell A1.
+
+| | A | B |
+|---|---|---|
+| **1** | Item | Amount (Rs) |
+| **2** | Groceries | 18000 |
+| **3** | Electricity | 6500 |
+| **4** | Gas | 2500 |
+| **5** | Milk | 4200 |
+| **6** | Transport | 5000 |
+| **7** | School fees | 7000 |
+
+1. Type the table above. Check every number.
+2. Drag from cell A1 to cell B7 to select the table, with the headings.
+3. Select the **Insert** tab, then **Recommended Charts**.
+4. Select the **All Charts** tab, then **Column**, then **OK**.
+5. Check: Groceries has the tallest column. Gas has the shortest column.
+6. Select the **Chart Title** box. Select it again, select the words, and type **Monthly Expenses**.
+7. Drag the chart to the right of your table, so it does not cover any numbers.
+8. Make the chart bigger by dragging a sizing handle at a corner.
+9. Save the workbook with the name **Monthly Expenses**.
+10. Show your teacher: your column chart with the title Monthly Expenses, next to your table.
+
+## Check Questions
+
+1. Point to the tallest column in your chart. Which item is it, and how much is it?
+   **Answer:** Groceries, Rs 18000.
+2. Which tab and which button do you use to start a chart?
+   **Answer:** The **Insert** tab, then **Recommended Charts**. Then **All Charts**, **Column** and **OK**.
+3. How do you change the words in the chart title?
+   **Answer:** Select the title box, select it again, select the words, then type the new title.
+
+## Common Mistakes
+
+- **Selecting only the numbers, without the names** → The chart may not show the item names. Select the names and the numbers, with the headings.
+- **Typing "Rs" in the same cell as the number** → Excel may not treat it as a number. Type only the number, and write "Rs" in the heading.
+- **The chart covers the table** → Drag the chart to empty cells, to the right of the table.
+- **Moving only the title, not the whole chart** → Select **Undo** (see [Lesson 7.2](entering-editing-saving-data.mdx)). Then drag from an empty part of the chart.
+
+## Sources
+
+*For the teacher: these sources were checked before this lesson was written.*
+
+- [Microsoft Support, "Create a chart from start to finish"](https://support.microsoft.com/en-gb/office/create-a-chart-from-start-to-finish-0baf399e-dd61-4e18-8a73-b3fd5d5680c2): applies to Excel 2016 and 2019. Select data for the chart; select **Insert** > **Recommended Charts**; select the **All Charts** tab to see all chart types; select a chart; select **OK**.
+- [Microsoft Support, "Use a screen reader to create a chart and select a chart in Excel"](https://support.microsoft.com/en-us/office/use-a-screen-reader-to-create-a-chart-and-select-a-chart-in-excel-af32b734-edfe-44df-b21e-4aa05d20b03b): applies to Excel 2016 and 2019. Recommended Charts opens the **Insert Chart** window; **Column** is a chart type for comparing values across a few categories; the chart is added to the worksheet.
+- [Microsoft Support, "Add or remove titles in a chart"](https://support.microsoft.com/en-us/office/excelexp/add-or-remove-titles-in-a-chart): applies to Excel 2016 and 2019. Select the **Chart Title** box and type a title; the **+** sign at the top-right of the chart and the **Chart Title** check box.
+- [Microsoft Support, "Edit titles or data labels in a chart"](https://support.microsoft.com/en-us/office/edit-titles-or-data-labels-in-a-chart-248bfe15-02ed-477a-81b6-b14e2c03b87e): applies to Excel 2016 and 2019. Click the title, click again to edit, drag to select the text, then type the new text.
+- [Microsoft Support, "Move or resize a chart"](https://support.microsoft.com/en-us/office/move-or-resize-a-chart-f9d6087b-1d7b-4a72-8d81-1d0788ea783f): applies to Excel 2021 and newer only (hence the UNVERIFIED box). To move a chart, drag it; to resize, select the chart and drag the sizing handles.
+- [Microsoft Support, "Available chart types in Office"](https://support.microsoft.com/en-us/office/available-chart-types-in-office-a6187218-807e-4103-9e0a-27cdb19afb90): a column chart shows categories along the bottom and values going up; pie charts are another chart type. (General chart facts only.)

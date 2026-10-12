@@ -1,0 +1,52 @@
+// Lessons per module, in teaching order. Each lesson task adds its entry FIRST (RED),
+// before the lesson is written. See specs/module-*/tasks.md.
+const lesson = (module, slug, title) => ({url: `/${module}/${slug}`, title});
+
+const M1 = 'module-01-computer-basics';
+const M4 = 'module-04-ms-word';
+const M7 = 'module-07-ms-excel';
+
+export const MODULE_LESSONS = {
+  [M1]: [
+    lesson(M1, 'what-is-a-computer', 'Lesson 1.1: What Is a Computer? Input, Processing, Output and Storage'),
+    lesson(M1, 'hardware-and-software', 'Lesson 1.2: Hardware and Software'),
+    lesson(M1, 'parts-of-a-computer', 'Lesson 1.3: Parts of a Computer and Their Jobs'),
+    lesson(M1, 'starting-up-and-shutting-down', 'Lesson 1.4: Starting Up and Shutting Down Safely'),
+    lesson(M1, 'using-the-mouse', 'Lesson 1.5: Using the Mouse'),
+    lesson(M1, 'keyboard-basics', 'Lesson 1.6: Keyboard Basics'),
+    lesson(M1, 'operating-system-and-desktop', 'Lesson 1.7: The Operating System and the Desktop'),
+    lesson(M1, 'files-folders-saving-deleting', 'Lesson 1.8: Files, Folders, Saving and Deleting'),
+  ],
+  [M4]: [
+    lesson(M4, 'starting-word', 'Lesson 4.1: Starting Word and the Word Window'),
+    lesson(M4, 'typing-and-correcting-text', 'Lesson 4.2: Typing and Correcting Text'),
+    lesson(M4, 'saving-closing-opening', 'Lesson 4.3: Saving, Closing and Opening a Document'),
+    lesson(M4, 'copy-cut-paste', 'Lesson 4.4: Selecting Text: Copy, Cut and Paste'),
+    lesson(M4, 'formatting-text', 'Lesson 4.5: Formatting Text: Font, Size and Style'),
+    lesson(M4, 'formatting-paragraphs', 'Lesson 4.6: Formatting Paragraphs: Alignment and Line Spacing'),
+    lesson(M4, 'bulleted-and-numbered-lists', 'Lesson 4.7: Bulleted and Numbered Lists'),
+    lesson(M4, 'spelling-and-grammar', 'Lesson 4.8: Checking Spelling and Grammar'),
+    lesson(M4, 'tables', 'Lesson 4.9: Tables'),
+    lesson(M4, 'pictures-and-shapes', 'Lesson 4.10: Pictures and Shapes'),
+    lesson(M4, 'page-setup-and-printing', 'Lesson 4.11: Page Setup and Printing'),
+    lesson(M4, 'project-application-letter', 'Lesson 4.12: Project: A Job Application Letter'),
+    lesson(M4, 'project-cv', 'Lesson 4.13: Project: Your CV'),
+  ],
+  [M7]: [
+    lesson(M7, 'starting-excel', 'Lesson 7.1: Starting Excel: Workbooks, Worksheets and Cells'),
+    lesson(M7, 'entering-editing-saving-data', 'Lesson 7.2: Entering, Editing and Saving Data'),
+    lesson(M7, 'rows-and-columns', 'Lesson 7.3: Rows and Columns: Width, Height, Insert and Delete'),
+    lesson(M7, 'formatting-cells', 'Lesson 7.4: Formatting Cells: Font, Fill, Borders and Alignment'),
+    lesson(M7, 'number-formats', 'Lesson 7.5: Number Formats: Money, Percentages and Dates'),
+    lesson(M7, 'first-formulas', 'Lesson 7.6: Your First Formulas'),
+    lesson(M7, 'fill-handle', 'Lesson 7.7: Copying Formulas with the Fill Handle'),
+    lesson(M7, 'sum-and-average', 'Lesson 7.8: Functions: SUM and AVERAGE'),
+    lesson(M7, 'min-max-count', 'Lesson 7.9: Functions: MIN, MAX and COUNT'),
+    lesson(M7, 'sorting-data', 'Lesson 7.10: Sorting Data'),
+    lesson(M7, 'simple-chart', 'Lesson 7.11: Making a Simple Chart'),
+    lesson(M7, 'page-setup-and-printing', 'Lesson 7.12: Page Setup and Printing a Worksheet'),
+    lesson(M7, 'project-result-sheet', 'Lesson 7.13: Project: Student Result Sheet'),
+  ],
+};
+
+export const LESSONS = Object.values(MODULE_LESSONS).flat();

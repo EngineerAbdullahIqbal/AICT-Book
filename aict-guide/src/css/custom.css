@@ -28,3 +28,10 @@
   --ifm-color-primary-lightest: #4fddbf;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
 }
+
+/* Urdu help text: <span lang="ur" dir="rtl">…</span> (research R8).
+   Slightly larger and taller lines so Urdu script is easy to read on a projector. */
+:lang(ur) {
+  font-size: 1.15em;
+  line-height: 1.9;
+}

@@ -1,0 +1,132 @@
+---
+title: "Lesson 7.9: Functions: MIN, MAX and COUNT"
+sidebar_label: "7.9 MIN, MAX and COUNT"
+sidebar_position: 9
+---
+
+## Goal
+
+By the end of this lesson, you can use MIN, MAX and COUNT to find the smallest, the largest and
+how many numbers.
+
+## Why It Matters
+
+A teacher wants the highest and lowest marks in a test. A cricket coach wants to know how many
+players scored runs. MIN, MAX and COUNT answer these questions in one short formula. They work
+the same way for a list of 5 numbers or 500.
+
+```mermaid
+flowchart LR
+    accTitle: MIN, MAX and COUNT on one range
+    accDescr: The range B2 to B7 holds five marks and the word Absent. MIN gives 62, MAX gives 91 and COUNT gives 5.
+    A[Range B2 to B7] --> B[MIN]
+    A --> C[MAX]
+    A --> D[COUNT]
+    B --> E[Smallest 62]
+    C --> F[Largest 91]
+    D --> G[5 numbers]
+```
+
+**Diagram in words:** The same range goes into three functions. MIN gives the smallest mark,
+62. MAX gives the largest, 91. COUNT gives 5, because only five cells hold numbers.
+
+## Key Terms
+
+| Term | Simple meaning |
+|------|----------------|
+| MIN | A function that gives the smallest number in a range. |
+| MAX | A function that gives the largest number in a range. |
+| COUNT | A function that counts how many cells in a range hold numbers. It does not count words. |
+| Text | Words in a cell, like "Absent". Excel does not calculate with text. |
+
+You learned what a function and a range are in [Lesson 7.8](sum-and-average.mdx).
+
+## Teacher Demo
+
+Open a new blank workbook ([Lesson 7.1](starting-excel.mdx)). Type these test marks. Hamza was
+absent, so type the word Absent in B4. Leave B8, B9 and B10 empty.
+
+| Row | A | B |
+|-----|---|---|
+| 1 | Student | Marks |
+| 2 | Ali | 78 |
+| 3 | Sana | 85 |
+| 4 | Hamza | Absent |
+| 5 | Fatima | 91 |
+| 6 | Usman | 62 |
+| 7 | Zainab | 70 |
+| 8 | Lowest | `=MIN(B2:B7)` gives 62 |
+| 9 | Highest | `=MAX(B2:B7)` gives 91 |
+| 10 | Students with marks | `=COUNT(B2:B7)` gives 5 |
+
+1. Select cell B8. Type `=MIN(B2:B7)` and press **Enter**. *B8 shows 62.*
+2. Say: "MIN found the smallest mark. It did not look at the word Absent."
+3. Select cell B9. Type `=MAX(B2:B7)` and press **Enter**. *B9 shows 91.*
+4. Select cell B10. Type `=COUNT(B2:B7)` and press **Enter**. *B10 shows 5.*
+5. Point to rows 2 to 7. Say: "There are six students, but COUNT gives 5."
+6. Say: "COUNT counts only cells with numbers. Absent is a word, so COUNT skips it."
+7. Select cell B4. Type 50 and press **Enter**. *B8 changes to 50. B10 changes to 6.*
+
+:::info[Screenshot to add]
+
+The marks list with B8, B9 and B10 showing 62, 91 and 5.
+
+:::
+
+## Student Task
+
+Runs scored by a street cricket team. Rehan did not bat, so type the words Did not bat for
+him. Type 0 for Danish, because he batted and scored no runs.
+
+| Row | A | B |
+|-----|---|---|
+| 1 | Player | Runs |
+| 2 | Bilal | 45 |
+| 3 | Kashif | 12 |
+| 4 | Danish | 0 |
+| 5 | Imran | 67 |
+| 6 | Rehan | Did not bat |
+| 7 | Asad | 23 |
+| 8 | Faisal | 38 |
+| 9 | Lowest | `=MIN(B2:B8)` gives 0 |
+| 10 | Highest | `=MAX(B2:B8)` gives 67 |
+| 11 | Players who batted | `=COUNT(B2:B8)` gives 6 |
+
+1. Open a new blank workbook and type the table, rows 1 to 8.
+2. Type the labels in A9, A10 and A11.
+3. In B9, type `=MIN(B2:B8)` and press **Enter**. Check: 0.
+4. In B10, type `=MAX(B2:B8)` and press **Enter**. Check: 67.
+5. In B11, type `=COUNT(B2:B8)` and press **Enter**. Check: 6.
+6. Say to your partner why COUNT gives 6 and not 7.
+7. Save the workbook with the name **Cricket Runs** ([Lesson 7.2](entering-editing-saving-data.mdx)).
+8. Show your teacher: the three results, and explain why Danish's 0 is counted.
+
+## Check Questions
+
+1. Which function gives the highest mark in a class?
+   **Answer:** MAX, for example `=MAX(B2:B7)`.
+2. A range holds 40, Absent, 55 and 0. What does COUNT give?
+   **Answer:** 3. COUNT counts the numbers 40, 55 and 0. It does not count the word Absent.
+3. Select the cell in your task that shows the lowest score. Point to its formula.
+   **Answer:** Cell B9. The formula bar shows `=MIN(B2:B8)`.
+
+## Common Mistakes
+
+- **Expecting COUNT to count names or words** → COUNT counts only cells with numbers. Count
+  students by their marks, not by their names.
+- **Mixing up MIN and MAX** → MIN is the smallest (minimum). MAX is the largest (maximum).
+- **Leaving a cell empty instead of typing 0** → MIN, MAX and COUNT skip empty cells. If someone
+  scored nothing, type 0.
+
+## Sources
+
+*For the teacher: these sources were checked before this lesson was written.*
+
+- [Microsoft Support, "MIN function"](https://support.microsoft.com/en-us/excel/functions/min-function) (applies to Excel 2016 and 2019): MIN returns the smallest number; empty cells, logical values and text in a range are ignored.
+- [Microsoft Support, "MAX function"](https://support.microsoft.com/en-us/excel/functions/max-function) (applies to Excel 2016 and 2019): MAX returns the largest value; empty cells, logical values and text in a range are ignored.
+- [Microsoft Support, "COUNT function"](https://support.microsoft.com/en-us/excel/functions/count-function) (applies to Excel 2016 and 2019): COUNT counts the number of cells that contain numbers; empty cells and text in a range are not counted.
+- [Microsoft Support, "Calculate the smallest or largest number in a range"](https://support.microsoft.com/en-us/office/calculate-the-smallest-or-largest-number-in-a-range-in-excel-45fe249f-96c3-443b-8e9f-87f16c48462c) (applies to Excel 2016 and 2019): examples `=MIN(A2:A7)` and `=MAX(A2:A7)`.
+
+All results were calculated and checked again before writing. Marks 78, 85, 91, 62, 70: smallest
+62, largest 91, five numbers. With 50 in B4: smallest 50, six numbers. Runs 45, 12, 0, 67, 23,
+38: smallest 0, largest 67, six numbers.
