@@ -1,9 +1,10 @@
 ---
-slug: /
+slug: /start
 sidebar_position: 0
+sidebar_label: Start Here
 ---
 
-# AICT Course Guide
+# Start Here
 
 This book is for the 1-year AICT computer course. It is written for complete beginners. You do
 not need to know anything about computers to start.

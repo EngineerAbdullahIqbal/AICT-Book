@@ -1,32 +1,212 @@
 /**
- * Any CSS included here will be global. The classic template
- * bundles Infima by default. Infima is a CSS framework designed to
- * work well for content-centric websites.
+ * Site-wide look (specs/site-design/spec.md §4). Layout and style follow the reference design;
+ * colours are our own tokens. Text is larger than default so it reads well on a projector.
  */
 
-/* You can override the default Infima variables here. */
+/* ---------- Tokens: light mode ---------- */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
-  --ifm-code-font-size: 95%;
+  --aict-font-heading: 'Ubuntu', 'Inter', system-ui, sans-serif;
+  --aict-font-mono: 'JetBrains Mono', ui-monospace, monospace;
+
+  --aict-bg: #ffffff;
+  --aict-surface: #f6f7fb;
+  --aict-surface-2: #e8ebf5;
+  --aict-band: #eef1ff;
+  --aict-band-card: #ffffff;
+  --aict-border: #dde1ee;
+  --aict-border-strong: #b9c0d6;
+  --aict-text: #0d1238;
+  --aict-muted: #4a5170;
+  --aict-accent: #3b5bdb;
+  --aict-accent-strong: #2f4bc0;
+  --aict-accent-soft: rgba(59, 91, 219, 0.08);
+  --aict-glow: rgba(59, 91, 219, 0.18);
+
+  --ifm-color-primary: #3b5bdb;
+  --ifm-color-primary-dark: #3552c5;
+  --ifm-color-primary-darker: #324dba;
+  --ifm-color-primary-darkest: #293f99;
+  --ifm-color-primary-light: #5070e0;
+  --ifm-color-primary-lighter: #5b79e2;
+  --ifm-color-primary-lightest: #7b93e8;
+
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --ifm-heading-font-family: var(--aict-font-heading);
+  --ifm-font-family-monospace: var(--aict-font-mono);
+  /* 18px base: easier to read from the back of a classroom. */
+  --ifm-font-size-base: 112.5%;
+  --ifm-line-height-base: 1.7;
+  --ifm-global-radius: 0;
+  --ifm-code-font-size: 92%;
+  --ifm-background-color: var(--aict-bg);
+  --ifm-navbar-height: 4.25rem;
+  --ifm-toc-border-color: var(--aict-border);
+  --ifm-table-border-color: var(--aict-border);
+  --ifm-hr-background-color: var(--aict-border);
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
 }
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
+/* ---------- Tokens: dark mode (the default) ---------- */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --aict-bg: #000000;
+  --aict-surface: #0b0b0f;
+  --aict-surface-2: #1c1c24;
+  --aict-band: #0f1a4d;
+  --aict-band-card: #16225e;
+  --aict-border: #23232b;
+  --aict-border-strong: #3a3a46;
+  --aict-text: #f5f6fa;
+  --aict-muted: #a3a8b8;
+  --aict-accent: #6b8afd;
+  --aict-accent-strong: #5b7cfa;
+  --aict-accent-soft: rgba(107, 138, 253, 0.12);
+  --aict-glow: rgba(91, 124, 250, 0.22);
+
+  --ifm-color-primary: #6b8afd;
+  --ifm-color-primary-dark: #4d72fc;
+  --ifm-color-primary-darker: #3e66fc;
+  --ifm-color-primary-darkest: #0f41fb;
+  --ifm-color-primary-light: #89a2fe;
+  --ifm-color-primary-lighter: #98aefe;
+  --ifm-color-primary-lightest: #c6d2fe;
+
+  --ifm-background-color: var(--aict-bg);
+  --ifm-background-surface-color: var(--aict-bg);
+  --ifm-font-color-base: #e9eaf0;
+  --ifm-heading-color: #ffffff;
   --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+body {
+  background: var(--aict-bg);
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background: var(--aict-bg);
+  border-bottom: 1px solid var(--aict-border);
+  box-shadow: none;
+}
+
+.navbar__title {
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  font-size: 1.3rem;
+}
+
+.navbar__logo {
+  height: 2rem;
+}
+
+/* ---------- Doc pages ---------- */
+.theme-doc-sidebar-container {
+  border-right-color: var(--aict-border) !important;
+}
+
+.menu {
+  font-size: 1rem;
+}
+
+.menu__link {
+  border-radius: 0;
+}
+
+.menu__link--active:not(.menu__link--sublist) {
+  background: var(--aict-accent-soft);
+  box-shadow: inset 3px 0 0 var(--aict-accent);
+  font-weight: 600;
+}
+
+.theme-doc-markdown h1 {
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  line-height: 1.15;
+  margin-bottom: 1.5rem;
+}
+
+.theme-doc-markdown h2 {
+  margin-top: 2.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 1px solid var(--aict-border);
+  font-size: 1.8rem;
+}
+
+.theme-doc-markdown h3 {
+  font-size: 1.35rem;
+}
+
+.breadcrumbs__link {
+  border-radius: 0;
+  font-size: 0.95rem;
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  background: transparent;
+  color: var(--aict-accent);
+}
+
+/* Tables (Key Terms, practice tables) */
+.theme-doc-markdown table {
+  display: table;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.theme-doc-markdown table thead tr {
+  background: var(--aict-surface-2);
+  border-bottom: 2px solid var(--aict-accent);
+}
+
+.theme-doc-markdown table th {
+  text-align: left;
+  font-weight: 700;
+}
+
+.theme-doc-markdown table tr:nth-child(2n) {
+  background: var(--aict-surface);
+}
+
+/* Callout boxes: square, with a strong left edge */
+.theme-admonition {
+  border-radius: 0;
+  border-left-width: 4px;
+}
+
+/* Previous / next cards */
+.pagination-nav__link {
+  border-radius: 0;
+  border-color: var(--aict-border);
+  padding: 1.25rem 1.5rem;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--aict-accent);
+}
+
+.pagination-nav__label {
+  font-family: var(--aict-font-heading);
+}
+
+/* Category (module) index cards, if shown */
+.card {
+  border-radius: 0;
+}
+
+/* Tabs (Windows 10 / Windows 11) */
+.tabs__item {
+  border-radius: 0;
+}
+
+/* ---------- Footer ---------- */
+.footer--dark {
+  --ifm-footer-background-color: #000000;
+  border-top: 1px solid #23232b;
+}
+
+.footer__title {
+  font-family: var(--aict-font-mono);
+  font-size: 0.85rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
 }
 
 /* Urdu help text: <span lang="ur" dir="rtl">…</span> (research R8).

@@ -27,17 +27,22 @@ test('site-title: the site is named AICT Course Guide', async ({page}) => {
   await expect(page.locator('.navbar__title')).toHaveText(BOOK_TITLE);
 });
 
-test('home-at-root: / is the book home page (a doc page)', async ({page}) => {
-  await page.goto('/');
+// The book's first doc page moved from / to /start when the front page was added
+// (specs/site-design/spec.md, D-02).
+const START_URL = '/start';
+const START_TITLE = 'Start Here';
+
+test('book-start: /start is the first book page (a doc page)', async ({page}) => {
+  await page.goto(START_URL);
   // Doc pages render inside <article> next to the docs sidebar
   // (`theme-doc-sidebar-container` is a stable theme class name).
-  await expect(page.locator('article h1')).toHaveText(BOOK_TITLE);
+  await expect(page.locator('article h1')).toHaveText(START_TITLE);
   await expect(page.locator('.theme-doc-sidebar-container')).toBeVisible();
 });
 
 test('no-blog: the blog is not built and not linked', async ({page}) => {
   expect(fs.existsSync(path.join(BUILD_DIR, 'blog'))).toBe(false);
-  await page.goto('/');
+  await page.goto(START_URL);
   await expect(page.locator('.navbar').getByRole('link', {name: 'Blog'})).toHaveCount(0);
 });
 
@@ -46,7 +51,7 @@ test('no-tutorial: the sample tutorial is not built and not in the sidebar', asy
     /tutorial-(basics|extras)/.test(folder),
   );
   expect(tutorialFolders).toEqual([]);
-  await page.goto('/');
+  await page.goto(START_URL);
   const sidebar = page.locator('.theme-doc-sidebar-container');
   await expect(sidebar).toBeVisible();
   await expect(sidebar).not.toContainText('Tutorial');
@@ -55,7 +60,7 @@ test('no-tutorial: the sample tutorial is not built and not in the sidebar', asy
 // Top-level sidebar entries: label + link of the first link in each top-level item.
 // Works whether a module is a plain link or an expandable category.
 async function topLevelSidebarItems(page) {
-  await page.goto('/');
+  await page.goto(START_URL);
   const menu = page.locator('.theme-doc-sidebar-container ul.theme-doc-sidebar-menu');
   await expect(menu).toBeVisible();
   return menu.evaluate((ul) =>
@@ -66,11 +71,11 @@ async function topLevelSidebarItems(page) {
   );
 }
 
-test('sixteen-modules: the sidebar shows the book home then the 16 modules in order', async ({
+test('sixteen-modules: the sidebar shows Start Here then the 16 modules in order', async ({
   page,
 }) => {
   const labels = (await topLevelSidebarItems(page)).map((item) => item.label);
-  expect(labels).toEqual([BOOK_TITLE, ...MODULES]);
+  expect(labels).toEqual([START_TITLE, ...MODULES]);
 });
 
 test('module-placeholders: each module link opens a page titled with its module name', async ({

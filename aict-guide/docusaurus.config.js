@@ -12,7 +12,13 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'AICT Course Guide',
   tagline: 'A teaching book for the 1-year AICT computer course',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/aict-logo.svg',
+
+  // Fonts for the site design (specs/site-design/spec.md §4): Ubuntu for headings,
+  // Inter for text, JetBrains Mono for small labels.
+  stylesheets: [
+    'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&family=Ubuntu:wght@500;700&display=swap',
+  ],
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -70,16 +76,19 @@ const config = {
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
-      // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      // Dark by default, like the reference design; the switch stays for bright classrooms.
       colorMode: {
-        respectPrefersColorScheme: true,
+        defaultMode: 'dark',
+        disableSwitch: false,
+        respectPrefersColorScheme: false,
       },
       navbar: {
         title: 'AICT Course Guide',
         logo: {
-          alt: 'AICT Course Guide',
-          src: 'img/logo.svg',
+          alt: 'AICT Course Guide logo',
+          src: 'img/aict-logo.svg',
+          width: 32,
+          height: 32,
         },
         items: [
           {
@@ -92,7 +101,25 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} AICT Course Guide. Built with Docusaurus.`,
+        links: [
+          {
+            title: 'Learn',
+            items: [
+              {label: 'Start Reading', to: '/start'},
+              {label: 'Module 1: Computer Basics', to: '/module-01-computer-basics'},
+              {label: 'Module 4: MS Word', to: '/module-04-ms-word'},
+              {label: 'Module 7: MS Excel', to: '/module-07-ms-excel'},
+            ],
+          },
+          {
+            title: 'Global Coaching Center',
+            items: [
+              {label: 'All 16 Modules', to: '/#modules'},
+              {label: 'How Every Lesson Works', to: '/#how-it-works'},
+            ],
+          },
+        ],
+        copyright: `© ${new Date().getFullYear()} Global Coaching Center · AICT Course Guide`,
       },
       // neutral prints well and is calm on a projector; dark suits dark mode (research R3).
       mermaid: {
