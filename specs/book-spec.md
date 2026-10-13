@@ -1,7 +1,11 @@
 # AICT Course Guide — Book Specification
 
-**Status**: APPROVED v1.1 (owner approved 2026-10-12)
+**Status**: APPROVED v1.2 (owner approved 2026-10-13)
 **Change log**:
+- v1.2 (2026-10-13): lessons speak to students only. "Teacher Demo" becomes "Step by Step",
+  "Student Task" becomes "Practice" (ends "Check your work:"); no mention of the teacher;
+  every step says why; more real-life examples; screenshot spots hidden from students (owner
+  decision).
 - v1.1 (2026-10-12): Key Terms Urdu column optional; Office 2016/2019 target; practice tables
   typed from the page; screenshot spots; GitHub Pages setup allowed; delivery scope for the
   first release (Section 9). All owner decisions.
@@ -14,35 +18,21 @@
 ## 1. Purpose
 
 A website-based teaching book for the 1-year AICT computer course for absolute beginners in
-Pakistan. **At first, only the teacher uses the site**, to plan and deliver each class. Later,
-students will use it to follow along and revise, so every page must already be readable by a
-beginner.
+Pakistan. Students use the site to learn each lesson step by step, practise, and revise. Every
+page must be readable by a complete beginner.
 
 ## 2. Users and How They Use the Site
 
-### 2.1 Teacher
-
-| When | What the teacher does on the site |
-|------|-----------------------------------|
-| Before class | Reads the lesson, checks the Teacher Demo steps on the lab computer, and tests any UNVERIFIED steps. |
-| In class | Shows the lesson on a projector or screen. Follows the Teacher Demo steps out loud. Shows the diagram. |
-| After the demo | Gives the Student Task. Walks around and checks students' work. |
-| End of class | Asks the 3 Check Questions. Uses Common Mistakes to correct problems. |
-
-### 2.2 Student (later phase)
-
-Students do not use the site at first. They see it on the teacher's screen in class. When
-students start using it themselves:
+**v1.2 (2026-10-13):** the **student** is the reader. The book may be shown in class, but every
+page speaks to the student directly and never mentions the teacher.
 
 | When | What the student does on the site |
 |------|-----------------------------------|
-| In class | Looks at the diagram and Key Terms while the teacher explains. |
-| Practice | Follows the Student Task steps. |
-| Revision | Rereads Key Terms and answers the Check Questions. |
+| Learning | Reads Goal, Why It Matters and Key Terms, then follows **Step by Step** on a computer. |
+| Practice | Does the **Practice** task alone, then compares with "Check your work". |
+| Revision | Rereads Key Terms, answers the Check Questions, and reads Common Mistakes. |
 
-**Check-question answers**: visible on the page for now, because only the teacher uses the
-site. Before students start using the site, this must be reviewed (for example, hiding the
-answers until clicked). That change will get its own spec.
+Check-question answers stay visible.
 
 ### 2.3 User Scenarios (acceptance tests for the site as a whole)
 
@@ -95,13 +85,13 @@ Every lesson page has these sections, **in this order**, with these exact headin
 | # | Heading | Rules |
 |---|---------|-------|
 | 1 | **Goal** | One sentence that starts "By the end of this lesson, you can …". It names something the student can *do*, not just know. |
-| 2 | **Why It Matters** | 2–4 short sentences linking the skill to real life in Pakistan (home, work, study). |
+| 2 | **Why It Matters** | 2–5 short sentences, with at least two real-life examples from Pakistan (home, shop, office, school, jobs). |
 | 3 | **Key Terms** | A table with 2 columns: Term → Simple meaning. A third column, Urdu meaning, is optional (lessons that already have it keep it). Every new word used in the lesson is here. 3–8 terms. |
-| 4 | **Teacher Demo** | Numbered steps the teacher does in front of the class. Each step is one action. Includes what the class should see after the step. |
-| 5 | **Student Task** | Numbered steps the student does alone or in pairs. Ends with "Show your teacher: …" so the teacher can check it. |
+| 4 | **Step by Step** | A worked example the student follows. Numbered steps, one action each. Each step (or group) says why you do it, and what you should see after it. |
+| 5 | **Practice** | A new real-life task the student does alone. Numbered steps. Ends with "Check your work: …" saying exactly what a correct result looks like. |
 | 6 | **Check Questions** | Exactly 3 questions. At least one asks the student to *do* or *point to* something, not only answer in words. Each has a model answer, visible for now (see 2.2). |
 | 7 | **Common Mistakes** | 2–5 items. Each item is: Mistake → How to fix it. |
-| 8 | **Sources** | Every source used to verify the lesson's technical claims (constitution, Section 3). Marked as teacher-facing. |
+| 8 | **Sources** | Every official source used to verify the lesson's technical claims (constitution, Section 3). |
 
 Additional rules:
 - The diagram(s) go wherever they help most, usually in Why It Matters, Key Terms or Teacher
@@ -124,15 +114,12 @@ Additional rules:
   lab computers). Steps are checked against Microsoft Support pages for these versions.
 - **Practice data**: Student Tasks show small tables on the page that students type in
   themselves. No downloadable practice files.
-- **Screenshot spots**: where a screenshot would help, the lesson has a box the teacher can
-  later replace with their own screenshot:
+- **Screenshot spots**: where a screenshot would help, the lesson has a **hidden** note for the
+  owner (an MDX comment). Students never see it. The owner later replaces it with a real
+  screenshot:
 
-  ```md
-  :::info[Screenshot to add]
-
-  What the screenshot should show.
-
-  :::
+  ```mdx
+  {/* Screenshot to add: what the screenshot should show. */}
   ```
 
 ## 5. Diagram Standards

@@ -1,7 +1,11 @@
 # AICT Course Guide — Book Constitution
 
-**Status**: APPROVED v1.3 (owner approved 2026-10-12)
+**Status**: APPROVED v1.4 (owner approved 2026-10-13)
 **Change log**:
+- v1.4 (2026-10-13): §1 the book speaks to students directly and never mentions the teacher;
+  §2 every step says why you do it, with real-life examples; §4 unconfirmed steps are shown to
+  students as an "If your screen looks different" box, and the owner's checks go in a private
+  list (owner decision).
 - v1.3 (2026-10-12): §1 and §5 make Urdu help optional. The owner explains in Urdu in class.
   A full English/Urdu language switch is planned later with its own spec (owner decision).
 - v1.2 (2026-10-11): §3 adds university course pages (for example Stanford CS101) as
@@ -28,10 +32,10 @@ must follow them.
 - Many students have **never used a computer**. Assume no prior knowledge of any kind:
   not of the mouse, not of the screen, not of English computer words.
 - Students may be any age. Do not assume school-age examples only.
-- The book is used in a **classroom with a teacher**. At first, **only the teacher uses the
-  site** (shown on a projector or screen). Students will use it later; the book must stay
-  easy for them to read when that happens.
-- **Language**: **simple English**. The teacher explains in Urdu in class.
+- **Students read the book directly.** It may be shown in class, but it always speaks to the
+  student as "you". The book **never mentions the teacher**: no "teacher", "Teacher Demo",
+  "Say: …" lines or "show your teacher". It gives the steps and the reason for each step.
+- **Language**: **simple English**. Urdu help may be given in class.
   - The main text is in English.
   - Urdu text is **optional**. New lessons do not need Urdu. Lessons that already have Urdu
     meanings in Key Terms keep them.
@@ -43,6 +47,9 @@ must follow them.
 
 - Warm, patient and encouraging. Never make the reader feel slow or foolish.
 - Speak to the reader as "you".
+- **Say why.** Every step or group of steps says what it is for ("so that…", "This keeps…").
+- **Real life first.** Use real examples from daily life in Pakistan to show where the skill is used
+  (a shop bill, a school result, a job application, a family budget).
 - **Simple English**:
   - One idea per sentence.
   - Most sentences have 15 words or fewer. No sentence is longer than 25 words.
@@ -86,25 +93,27 @@ Applies to **steps in software** (Microsoft Office, Adobe Photoshop, Adobe Illus
 Windows, and similar).
 
 - A step is **verified** only when it comes from the official documentation for that software.
-- If a step cannot be verified, it must be marked UNVERIFIED in a warning box, like this:
+- If a step cannot be verified, the page shows it inside a student-friendly box that gives a
+  **confirmed backup way** to do it, like this:
 
   ```md
-  :::warning[UNVERIFIED]
+  :::tip[If your screen looks different]
 
-  This step could not be confirmed in official documentation.
-  Test it on the Windows laptop before teaching.
+  Your screen may not show this button. Do this instead: (a confirmed way).
 
   :::
   ```
 
+- Every such step is also listed, with what to check, in the owner's private list
+  `specs/unverified-test-list.md`. The page itself never says "test" or "teacher".
 - The box covers the **smallest possible part**: the single step or group of steps, never a
   whole lesson.
-- After the owner tests the step on the Windows laptop:
+- After the owner tests the step on a lab computer:
   - If it works, the owner records the software version that was tested, and the marker is
     removed.
   - If it does not work, the step is corrected or removed.
-- A module is **not ready for teaching** while it contains UNVERIFIED markers that the owner has
-  not tested.
+- A module is **fully checked** only when its private list is empty. Until then, the backup way
+  in each box keeps students moving.
 
 ## 5. Quality Standards
 

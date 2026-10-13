@@ -13,8 +13,8 @@ const SECTION_ORDER = [
   'Goal',
   'Why It Matters',
   'Key Terms',
-  'Teacher Demo',
-  'Student Task',
+  'Step by Step',
+  'Practice',
   'Check Questions',
   'Common Mistakes',
   'Sources',
@@ -63,10 +63,20 @@ for (const lesson of LESSONS) {
       }
     });
 
-    test('student-task-end', async ({page}) => {
-      const list = firstBlock(section(await readSections(page), 'Student Task'), ['OL']);
+    test('practice-end', async ({page}) => {
+      const list = firstBlock(section(await readSections(page), 'Practice'), ['OL']);
       expect(list?.items.length).toBeGreaterThan(0);
-      expect(list.items.at(-1).text).toContain('Show your teacher:');
+      expect(list.items.at(-1).text).toContain('Check your work:');
+    });
+
+    // The book speaks to students and never mentions the teacher (constitution v1.4 §1),
+    // and unsure steps use the student-friendly box, not an UNVERIFIED label (§4).
+    test('student-voice', async ({page}) => {
+      const text = await page.locator('article').first().innerText();
+      expect(text).not.toMatch(/teacher/i);
+      expect(text).not.toMatch(/UNVERIFIED/);
+      // Screenshot spots are hidden notes for the owner (book-spec v1.2 §4).
+      expect(text).not.toMatch(/Screenshot to add/i);
     });
 
     test('three-questions', async ({page}) => {

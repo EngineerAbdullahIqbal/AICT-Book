@@ -67,3 +67,13 @@ test('no-sample-images: no Docusaurus sample images are built or used', async ({
   const logo = await page.locator('.navbar__logo img').first().getAttribute('src');
   expect(logo).toMatch(/aict-logo\.svg$/);
 });
+
+// Front page, Start Here and module overviews speak to students too (constitution v1.4 §1).
+for (const url of ['/', '/start', '/module-01-computer-basics', '/module-04-ms-word', '/module-07-ms-excel']) {
+  test(`student-voice: ${url} never mentions the teacher`, async ({page}) => {
+    await page.goto(url);
+    const text = await page.locator('main').first().innerText();
+    expect(text).not.toMatch(/teacher/i);
+  });
+}
+

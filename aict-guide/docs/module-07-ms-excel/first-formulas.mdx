@@ -11,9 +11,9 @@ numbers using cell addresses.
 
 ## Why It Matters
 
-A shopkeeper adds the day's sales and works out the profit. A family shares a bill between
-people. Excel can do these sums for you. When you change a number, Excel works out the new
-answer for you.
+A shopkeeper adds the day's sales and works out the profit. A family shares a bill between the
+people in the house. Excel can do these sums for you. When you change a number, Excel works out
+the new answer by itself.
 
 ```mermaid
 flowchart LR
@@ -33,17 +33,19 @@ cell, type an operator, select the next cell, then press Enter.
 
 | Term | Simple meaning |
 |------|----------------|
-| Formula | A calculation you type in a cell. It always starts with an equal sign (`=`). |
+| Formula | A calculation you type in a cell. It always starts with an equal sign (`=`). It is like a sum on a calculator that Excel remembers. |
 | Operator | A sign that tells Excel what to do: `+` add, `-` subtract, `*` multiply, `/` divide. |
 | Asterisk | The `*` sign. Excel uses it to multiply, not the letter x. |
 | Forward slash | The `/` sign. Excel uses it to divide. |
 | Result | The answer to a formula. Excel shows it in the cell. |
 | Cell address | The name of a cell, like B1: column letter, then row number. See [Lesson 7.1](starting-excel.mdx). |
 
-## Teacher Demo
+## Step by Step
 
-Open a new blank workbook ([Lesson 7.1](starting-excel.mdx)). Type this table for Bilal's shop.
-Type only the words and numbers. Leave cells B3, B5, B8 and B11 empty. Make column A wider
+Follow these steps on your own computer. Bilal has a small shop. You will work out his sales,
+profit and a shared bill. Open a new blank workbook ([Lesson 7.1](starting-excel.mdx)). Type this
+table. Type only the words and numbers in columns A and B. Leave cells B3, B5, B8 and B11 empty.
+The last two columns are only for checking. Make column A wider
 ([Lesson 7.3](rows-and-columns.mdx)).
 
 | Row | A | B | Formula for B | Correct result |
@@ -60,30 +62,40 @@ Type only the words and numbers. Leave cells B3, B5, B8 and B11 empty. Make colu
 | 10 | People | 3 | | |
 | 11 | Each person pays (Rs) | | `=B9/B10` | 500 |
 
-1. Select cell B3. Say: "The answer goes here."
-2. Type `=`. Say: "Every formula starts with an equal sign."
+**Adding: total sales**
+
+1. Select cell B3. The answer goes here, so you start in this cell.
+2. Type `=`. Every formula starts with an equal sign. It tells Excel to calculate.
 3. Select cell B1. *B1 appears in the formula.*
 4. Type `+`.
 5. Select cell B2. *The cell shows `=B1+B2`.*
 6. Press **Enter**. *Cell B3 shows 2000.*
-7. Select cell B3 and point to the formula bar. *The cell shows 2000. The formula bar shows
-   `=B1+B2`.*
-8. Select cell B5. Type `=B3-B4` and press **Enter**. *B5 shows 550.*
-9. Select cell B8. Type `=B6*B7` and press **Enter**. *B8 shows 300.*
-10. Select cell B11. Type `=B9/B10` and press **Enter**. *B11 shows 500.*
-11. Select cell B1. Type 1500 and press **Enter**. *B3 changes to 2300. B5 changes to 850.*
-12. Say: "We used cell addresses, not numbers. So Excel changed the answers for us."
+7. Select cell B3 and look at the formula bar. This is how you check a formula later.
+   *The cell shows 2000. The formula bar shows `=B1+B2`.*
 
-:::info[Screenshot to add]
+**Subtracting, multiplying and dividing**
 
-Cell B3 selected: the cell shows 2000 and the formula bar shows =B1+B2.
+8. Select cell B5. Type `=B3-B4` and press **Enter**. Profit is what is left after the cost.
+   *B5 shows 550.*
+9. Select cell B8. Type `=B6*B7` and press **Enter**. The number of pens times the price gives
+   the money. *B8 shows 300.*
+10. Select cell B11. Type `=B9/B10` and press **Enter**. The bill divided by the people gives each
+    share. *B11 shows 500.*
 
-:::
+**Changing a number**
 
-## Student Task
+11. The morning sales were really Rs 1500. Select cell B1. Type 1500 and press **Enter**.
+    *B3 changes to 2300. B5 changes to 850.*
+12. Your formulas use cell addresses, not numbers. So Excel changed the answers for you. You do
+    not have to work them out again.
 
-Hina's class is going on a school trip. Type this table, starting in cell A1. Leave cells B3,
-B5, B7 and B9 empty. The last column shows the correct result so you can check your work.
+{/* Screenshot to add: Cell B3 selected: the cell shows 2000 and the formula bar shows =B1+B2. */}
+
+## Practice
+
+Hina's school is going on a trip. Help her plan the money. Type this table, starting in cell A1.
+Leave cells B3, B5, B7 and B9 empty. The last column shows the correct result so you can check
+your work.
 
 | Row | A | B | Formula to type in B | Correct result |
 |-----|---|---|----------------------|----------------|
@@ -93,19 +105,21 @@ B5, B7 and B9 empty. The last column shows the correct result so you can check y
 | 4 | Money from home (Rs) | 1000 | | |
 | 5 | Money left (Rs) | | `=B4-B3` | 400 |
 | 6 | Number of students | 25 | | |
-| 7 | Cost for the class (Rs) | | `=B3*B6` | 15000 |
+| 7 | Cost for all students (Rs) | | `=B3*B6` | 15000 |
 | 8 | Number of groups | 5 | | |
 | 9 | Students in each group | | `=B6/B8` | 5 |
 
 1. Open a new blank workbook and type the words and numbers in the table.
-2. Select B3. Type `=`, select B1, type `+`, select B2, and press **Enter**. Check: 600.
-3. In B5, type `=B4-B3` and press **Enter**. Check: 400.
-4. In B7, type `=B3*B6` and press **Enter**. Check: 15000.
-5. In B9, type `=B6/B8` and press **Enter**. Check: 5.
-6. Change the lunch in B2 to 300. Check: B3 shows 650, B5 shows 350 and B7 shows 16250.
+2. Select B3. Type `=`, select B1, type `+`, select B2, and press **Enter**. This adds the fare
+   and the lunch. Check: 600.
+3. In B5, type `=B4-B3` and press **Enter**. This shows what is left from home money. Check: 400.
+4. In B7, type `=B3*B6` and press **Enter**. This gives the cost for everyone. Check: 15000.
+5. In B9, type `=B6/B8` and press **Enter**. This shares the students into groups. Check: 5.
+6. The lunch now costs Rs 300. Change B2 to 300, so that you can see the answers update.
 7. Save the workbook with the name **School Trip** ([Lesson 7.2](entering-editing-saving-data.mdx)).
-8. Show your teacher: cell B7 selected, with its result in the cell and its formula in the
-   formula bar.
+8. Select cell B7 and look at the formula bar.
+9. Check your work: B3 shows 650, B5 shows 350, B7 shows 16250 and B9 shows 5. With B7
+   selected, the formula bar shows `=B3*B6`.
 
 ## Check Questions
 
@@ -127,12 +141,14 @@ B5, B7 and B9 empty. The last column shows the correct result so you can check y
 
 ## Sources
 
-*For the teacher: these sources were checked before this lesson was written.*
+*These official pages were checked when this lesson was written.*
 
 - [Microsoft Support, "Overview of formulas in Excel"](https://support.microsoft.com/en-us/office/overview-of-formulas-in-excel-ecfdc708-9162-49e8-b993-c311f47ca173) (applies to Excel 2016 and 2019): formulas always begin with an equal sign; the steps (select a cell, type =, select a cell, type an operator, select the next cell, press Enter); the operators `+` `-` `*` `/`; a cell address is a reference; with numbers typed in a formula instead of references, the result changes only if you change the formula.
 - [Microsoft Support, "Use Excel as your calculator"](https://support.microsoft.com/en-us/office/use-excel-as-your-calculator-a1abc057-ed11-443a-a635-68216555ad0a) (applies to Excel 2016 and 2019): `+` to add, `-` to subtract, `*` (asterisk) to multiply, `/` (forward slash) to divide; the formula stays visible in the formula bar whenever the cell is selected.
 - [Microsoft Support, "Enter a formula"](https://support.microsoft.com/en-us/excel/enter-a-formula) (lists Excel 2024 and Mac versions; used as support only): when a formula refers to other cells, Excel recalculates the result when you change those cells.
+- [Microsoft Learn, "How Excel determines the current mode of calculation"](https://learn.microsoft.com/en-us/troubleshoot/microsoft-365-apps/excel/current-mode-of-calculation) (applies to Excel 2016, 2021, 2024 and Microsoft 365): in the Automatic mode, calculation happens "When you make any change to the document. All affected parts of the document are recalculated." This confirms step 11 for Excel 2016.
+- [Microsoft Support, "How to avoid broken formulas"](https://support.microsoft.com/en-us/office/how-to-avoid-broken-formulas-in-excel-8309381d-33e8-42f6-b889-84ef6df1d586) (applies to Excel 2016 and 2019): "Formulas won't calculate if manual calculation is enabled." Check **File**, **Options**, **Formulas**: under **Workbook Calculation**, **Automatic** must be selected.
 
 All results in the tables were calculated and checked again before writing: 1200 + 800 = 2000;
 2000 − 1450 = 550; 12 × 25 = 300; 1500 ÷ 3 = 500; after the change, 1500 + 800 = 2300 and
-2300 − 1450 = 850. Student task: 600, 400, 15000 and 5; after the change, 650, 350 and 16250.
+2300 − 1450 = 850. Practice: 600, 400, 15000 and 5; after the change, 650, 350, 16250 and 5.

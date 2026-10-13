@@ -11,9 +11,9 @@ handle.
 
 ## Why It Matters
 
-A shop list can have many rows. Each row needs its own total. Typing the same formula again and
-again takes a long time. With the fill handle, you write the formula once and copy it to every
-row in one move.
+A shop list can have many rows, and each row needs its own total. A tuition centre's fee record
+has one row for every student. Typing the same formula again and again takes a long time. With
+the fill handle, you write the formula once and copy it to every row in one move.
 
 ```mermaid
 flowchart LR
@@ -35,13 +35,13 @@ Excel copies the formula to E3, E4, E5 and E6.
 | Drag | Hold down the left mouse button, move the mouse, then let go. See [Lesson 1.5](../module-01-computer-basics/using-the-mouse.mdx). |
 | Fill down | Copy a cell into the cells below it. |
 | Series | Numbers or words that follow an order, like 1, 2, 3 or Jan, Feb, Mar. |
-| Pattern | The first values you type, so Excel can guess what comes next. |
+| Pattern | The first values you type, so Excel can guess what comes next. It is like showing someone the first two steps of a counting game. |
 
-## Teacher Demo
+## Step by Step
 
-Open a new blank workbook ([Lesson 7.1](starting-excel.mdx)). Type this school shop list, but
-leave column A and column E empty for now. Make the columns wider if needed
-([Lesson 7.3](rows-and-columns.mdx)).
+Follow these steps on your own computer. You will make a bill for a small school shop. Open a
+new blank workbook ([Lesson 7.1](starting-excel.mdx)). Type this list, but leave column A and
+column E empty for now. Make the columns wider if needed ([Lesson 7.3](rows-and-columns.mdx)).
 
 | Row | A | B | C | D | E |
 |-----|---|---|---|---|---|
@@ -54,19 +54,25 @@ leave column A and column E empty for now. Make the columns wider if needed
 
 **Fill a series of numbers**
 
-1. Type 1 in cell A2. Type 2 in cell A3.
-2. Drag from A2 to A3 to select both cells.
+Numbering the rows helps you count and talk about the items.
+
+1. Type 1 in cell A2. Type 2 in cell A3. These two numbers show Excel the pattern.
+2. Drag from A2 to A3 to select both cells, so that Excel can see the pattern.
 3. Point to the fill handle, the small square at the lower-right corner of the selection.
 4. Drag the fill handle down to A6, then let go. *While you drag, Excel shows the next value.
-   A4, A5 and A6 show 3, 4 and 5.*
+   A4, A5 and A6 show 3, 4 and 5.* You did not have to type each number.
 
 **Copy a formula down**
 
-5. Select cell E2. Type `=C2*D2` and press **Enter**. *E2 shows 320.*
-6. Select cell E2 again.
-7. Drag the fill handle down to E6, then let go. *E3 to E6 show 150, 60, 120 and 180.*
-8. Select cell E4 and look at the formula bar. *The formula bar shows `=C4*D4`.*
-9. Say: "We copied the formula from row 2. In row 4, Excel changed it to use row 4."
+5. Select cell E2. Type `=C2*D2` and press **Enter**. Quantity times price gives the total.
+   *E2 shows 320.*
+6. Select cell E2 again, so that the fill handle belongs to the cell with the formula.
+7. Drag the fill handle down to E6, then let go. One drag fills every total.
+   *E3 to E6 show 150, 60, 120 and 180.*
+8. Select cell E4 and look at the formula bar, so that you can see what Excel copied.
+   *The formula bar shows `=C4*D4`.*
+9. You copied the formula from row 2. In row 4, Excel changed it to use row 4. That is why each
+   total is right for its own row.
 
 This table shows what Excel did. Each formula uses the cells in its own row.
 
@@ -80,19 +86,17 @@ This table shows what Excel did. Each formula uses the cells in its own row.
 
 **Fill a series of months**
 
+Months are useful for monthly records, like a milk bill or a fee record.
+
 10. Type Jan in cell G2. Type Feb in cell G3.
 11. Select G2 and G3. Drag the fill handle down to G7. *G4 to G7 show Mar, Apr, May and Jun.*
 
-:::info[Screenshot to add]
+{/* Screenshot to add: Cell E2 selected, with the mouse pointer on the fill handle at its lower-right corner. */}
 
-Cell E2 selected, with the mouse pointer on the fill handle at its lower-right corner.
+## Practice
 
-:::
-
-## Student Task
-
-Make a milk bill for six months. This is how your sheet should look at the end. Column E shows
-the formula you copy and the correct result.
+Your family buys milk from a milkman every day. Make a milk bill for six months. This is how your
+sheet should look at the end. Column E shows the formula you copy and the correct result.
 
 | Row | A | B | C | D | E |
 |-----|---|---|---|---|---|
@@ -109,12 +113,15 @@ the formula you copy and the correct result.
 3. Type Jan in B2 and Feb in B3. Select both and drag the fill handle down to B7. Check: Jan to
    Jun.
 4. Type the litres in C2 to C7.
-5. Type 200 in D2. Select D2 and drag the fill handle down to D7. Check: every cell shows 200.
+5. Type 200 in D2. Select D2 and drag the fill handle down to D7. The price is the same every
+   month, so one value is enough. Check: every cell shows 200.
 6. Select E2. Type `=C2*D2` and press **Enter**. Check: 12000.
-7. Select E2 and drag the fill handle down to E7. Check the bills against the table.
+7. Select E2 and drag the fill handle down to E7, so that every month gets its own bill.
 8. Select E5 and read the formula bar. Check: `=C5*D5`.
-9. Save the workbook with the name **Milk Bill** ([Lesson 7.2](entering-editing-saving-data.mdx)).
-10. Show your teacher: the six bills, and the formula in E5 shown in the formula bar.
+9. Save the workbook with the name **Milk Bill** ([Lesson 7.2](entering-editing-saving-data.mdx)),
+   so that your work is kept.
+10. Check your work: A2 to A7 show 1 to 6, and B2 to B7 show Jan to Jun. E2 to E7 show 12000,
+    11200, 12400, 12000, 12400 and 12000. With E5 selected, the formula bar shows `=C5*D5`.
 
 ## Check Questions
 
@@ -131,14 +138,14 @@ the formula you copy and the correct result.
   select both, then drag.
 - **Dragging too far** → Select **Undo** ([Lesson 7.2](entering-editing-saving-data.mdx)) and
   drag again, stopping at the last row.
-- **You cannot see the fill handle** → Teacher: select **File** > **Options** > **Advanced**.
-  Turn on **Enable fill handle and cell drag-and-drop**.
+- **You cannot see the fill handle** → Select **File** > **Options** > **Advanced**. Turn on
+  **Enable fill handle and cell drag-and-drop**.
 - **Selecting a different cell before dragging** → Select the cell with the formula first, then
   drag its fill handle.
 
 ## Sources
 
-*For the teacher: these sources were checked before this lesson was written.*
+*These official pages were checked when this lesson was written.*
 
 - [Microsoft Support, "Create a list of sequential dates"](https://support.microsoft.com/en-us/excel/get-started/create-a-list-of-sequential-dates) (applies to Excel 2016 and 2019): the fill handle is at the lower-right corner of the cell; hold it down and drag to fill.
 - [Microsoft Support, "Fill a formula down into adjacent cells"](https://support.microsoft.com/en-us/office/fill-a-formula-down-into-adjacent-cells-041edfe2-05bc-40e6-b933-ef48c3f308c6) (applies to Excel 2016 and 2019): drag the fill handle to fill a formula; the cell addresses adjust for each row; if the fill handle is hidden, turn it on in File > Options > Advanced > Enable fill handle and cell drag-and-drop.

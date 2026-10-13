@@ -35,11 +35,12 @@ the lesson is written.
 
 | Test | Check | Spec |
 |------|-------|------|
-| sections-in-order | The article's H2 texts are exactly: Goal, Why It Matters, Key Terms, Teacher Demo, Student Task, Check Questions, Common Mistakes, Sources (in that order) | AC-C1 |
+| sections-in-order | The article's H2 texts are exactly: Goal, Why It Matters, Key Terms, Step by Step, Practice, Check Questions, Common Mistakes, Sources (in that order; book-spec v1.2) | AC-C1 |
 | goal-sentence | First paragraph under Goal starts "By the end of this lesson, you can" | book-spec §4 |
 | has-diagram | ≥ 1 visible rendered Mermaid SVG with non-empty `<title>` and `<desc>` | AC-C2, AC-C3 |
 | key-terms-table | Under Key Terms: a table with headers Term / Simple meaning (optionally a third column, Urdu meaning) and 3–8 body rows; if the Urdu column is present, every Urdu cell has an element with `lang="ur"` | AC-C7 |
-| student-task-end | The last list item under Student Task contains "Show your teacher:" | AC-C8 |
+| practice-end | The last list item under Practice contains "Check your work:" | AC-C8 |
+| student-voice | The lesson text never contains "teacher" or "UNVERIFIED" (constitution v1.4) | AC-C11 |
 | three-questions | Under Check Questions: one ordered list with exactly 3 items; each contains "Answer:" | AC-C6 |
 | common-mistakes | Under Common Mistakes: a list with 2–5 items | book-spec §4 |
 | sources | Under Sources: a list with ≥ 1 item, each containing a link | AC-C4 |

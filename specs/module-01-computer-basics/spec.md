@@ -74,7 +74,10 @@ By the end of Module 1, the student can:
 | 1.8 | Files, Folders, Saving and Deleting | LO-8 |
 | 1.9 | Caring for Your Computer | LO-9 |
 
-## 4. Acceptance Criteria — All Lessons
+## 4. Acceptance Criteria
+
+> **Note (2026-10-13, book-spec v1.2):** "Teacher Demo" is now **Step by Step** and "Student Task"
+> is now **Practice**; criteria below that name the old sections apply to the new ones. — All Lessons
 
 Every lesson in this module must meet **all** of these. The "Checked by" column is a draft; the
 plan will turn each automated check into a test that is written first (Test-First).
@@ -89,7 +92,7 @@ plan will turn each automated check into a test that is written first (Test-Firs
 | AC-C6 | Exactly 3 Check Questions, each with a model answer. At least one asks the student to *do* or *point to* something. | Automated (count) + owner review |
 | AC-C7 | Key Terms has 3–8 terms, each with an English meaning (Urdu meaning optional, constitution v1.3). Every new word used in the lesson appears there. Writing follows the plain-language rules. | Automated (table has 2 or 3 columns, 3–8 rows) + owner review (any Urdu text, plain language) |
 | AC-C10 | The lesson fits one 60-minute session using the time plan in `book-spec.md` Section 4. | Owner review |
-| AC-C8 | Student Task ends with "Show your teacher: …". | Automated (text check) |
+| AC-C8 | Practice (formerly Student Task) ends with "Check your work: …" (book-spec v1.2). | Automated (text check) |
 | AC-C9 | The owner has reviewed and approved the lesson. | Owner |
 
 ## 5. Lessons in Detail

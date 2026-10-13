@@ -8,3 +8,6 @@ Thumbs.db
 *.swp
 .vscode/
 .idea/
+
+# Reference screenshots of another site: kept locally, never published
+agent-factory-screenshots/

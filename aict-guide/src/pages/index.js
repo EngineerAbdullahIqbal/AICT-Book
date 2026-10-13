@@ -27,11 +27,11 @@ const MODULES = [
   ['module-16-freelancing-intro', 'Freelancing Intro', 'Find online work and get paid.'],
 ];
 
-// The class plan for one lesson (specs/book-spec.md §4).
+// The parts of one lesson (specs/book-spec.md §4, v1.2).
 const LESSON_STEPS = [
   ['Goal and Key Terms', 'What you will learn today, and the new words.', '10 minutes'],
-  ['Teacher Demo', 'The teacher shows each step on the big screen.', '15 minutes'],
-  ['Student Task', 'You do the same steps on your own computer.', '25 minutes'],
+  ['Step by Step', 'Follow a worked example on your computer. Each step says why.', '15 minutes'],
+  ['Practice', 'Try a new real-life task on your own.', '25 minutes'],
   ['Check Questions', 'Three questions to check what you learned.', '10 minutes'],
 ];
 
@@ -114,8 +114,8 @@ function Hero({lessonsReady}) {
           <strong>Excel</strong>, and much more.
         </p>
         <p className={styles.heroSub}>
-          By <strong>Global Coaching Center</strong>. Made for the classroom: your teacher shows
-          each lesson on the big screen, and you practise step by step on your own computer.
+          By <strong>Global Coaching Center</strong>. Every lesson gives you clear steps, the reason
+          for each step, and a real-life task to practise on your own computer.
         </p>
         <div className={styles.actions}>
           <Link className={styles.btnPrimary} to="/start">
@@ -247,33 +247,33 @@ function HowItWorks() {
 function Audiences() {
   const cards = [
     {
-      title: 'For Teachers',
-      sub: 'TEACH FROM THE BIG SCREEN',
-      text: 'Open the lesson on the projector and follow the Teacher Demo out loud.',
+      title: 'Learn by Doing',
+      sub: 'FOLLOW THE STEPS',
+      text: 'Open a lesson and follow Step by Step on your own computer.',
       points: [
-        'Clear steps, one action at a time',
-        'Common Mistakes help you correct students',
-        'Steps to test before class are clearly marked',
+        'One action at a time, with what you should see',
+        'Every step tells you why you do it',
+        'Real examples: shop bills, result cards, job letters',
       ],
-      example: 'Show Lesson 7.8, add a SUM formula, and the class sees the answer appear.',
+      example: 'In Lesson 7.8, one SUM formula adds a whole list of numbers for you.',
     },
     {
-      title: 'For Students',
-      sub: 'PRACTISE AND REVISE',
-      text: 'Do the Student Task on your own computer, then check yourself.',
+      title: 'Practise and Revise',
+      sub: 'TRY IT ON YOUR OWN',
+      text: 'Do the Practice task alone, then compare with "Check your work".',
       points: [
         'Key Terms explain every new word',
         'Practice tables you type yourself',
         'Check Questions with answers for revision',
       ],
-      example: 'Type the shop price list, then show your teacher your finished table.',
+      example: 'Type a shop price list, then check that every total is correct.',
     },
   ];
   return (
     <section className={styles.section}>
       <div className={styles.sectionHead}>
-        <Eyebrow>ONE BOOK, TWO USES</Eyebrow>
-        <h2 className={styles.sectionTitle}>For Teachers and Students</h2>
+        <Eyebrow>LEARN BY DOING</Eyebrow>
+        <h2 className={styles.sectionTitle}>How You Learn With This Book</h2>
       </div>
       <div className={styles.audienceGrid}>
         {cards.map((card, i) => (
@@ -326,7 +326,7 @@ function StartCall() {
             <span className={styles.accent}>Goal:</span> name the four jobs of a computer
           </p>
           <p className={styles.dim}>▸ Input → Processing → Output → Storage</p>
-          <p className={styles.ok}>✓ Show your teacher: your answers</p>
+          <p className={styles.ok}>✓ Check your work: your answers</p>
         </div>
       </div>
     </section>
