@@ -3,6 +3,7 @@
 const lesson = (module, slug, title) => ({url: `/${module}/${slug}`, title});
 
 const M1 = 'module-01-computer-basics';
+const M2 = 'module-02-typing-skills';
 const M4 = 'module-04-ms-word';
 const M7 = 'module-07-ms-excel';
 
@@ -16,6 +17,18 @@ export const MODULE_LESSONS = {
     lesson(M1, 'keyboard-basics', 'Lesson 1.6: Keyboard Basics'),
     lesson(M1, 'operating-system-and-desktop', 'Lesson 1.7: The Operating System and the Desktop'),
     lesson(M1, 'files-folders-saving-deleting', 'Lesson 1.8: Files, Folders, Saving and Deleting'),
+    lesson(M1, 'caring-for-your-computer', 'Lesson 1.9: Caring for Your Computer'),
+  ],
+  [M2]: [
+    lesson(M2, 'sitting-right-and-home-row', 'Lesson 2.1: Sitting Right and the Home Row'),
+    lesson(M2, 'home-row-keys', 'Lesson 2.2: Typing the Home Row Keys'),
+    lesson(M2, 'top-row', 'Lesson 2.3: The Top Row'),
+    lesson(M2, 'bottom-row', 'Lesson 2.4: The Bottom Row'),
+    lesson(M2, 'capitals-and-punctuation', 'Lesson 2.5: Capital Letters and Punctuation'),
+    lesson(M2, 'number-row', 'Lesson 2.6: The Number Row'),
+    lesson(M2, 'words-and-sentences', 'Lesson 2.7: Typing Words and Sentences'),
+    lesson(M2, 'speed-and-accuracy', 'Lesson 2.8: Measuring Your Speed and Accuracy'),
+    lesson(M2, 'project-real-paragraph', 'Lesson 2.9: Project: Type a Real Paragraph'),
   ],
   [M4]: [
     lesson(M4, 'starting-word', 'Lesson 4.1: Starting Word and the Word Window'),

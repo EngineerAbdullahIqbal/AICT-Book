@@ -1,7 +1,9 @@
 # AICT Course Guide — Book Specification
 
-**Status**: APPROVED v1.2 (owner approved 2026-10-13)
+**Status**: APPROVED v1.3 (owner approved 2026-10-13)
 **Change log**:
+- v1.3 (2026-10-13): Check Question answers are hidden until the student selects "Show answer"
+  (owner decision).
 - v1.2 (2026-10-13): lessons speak to students only. "Teacher Demo" becomes "Step by Step",
   "Student Task" becomes "Practice" (ends "Check your work:"); no mention of the teacher;
   every step says why; more real-life examples; screenshot spots hidden from students (owner
@@ -32,7 +34,8 @@ page speaks to the student directly and never mentions the teacher.
 | Practice | Does the **Practice** task alone, then compares with "Check your work". |
 | Revision | Rereads Key Terms, answers the Check Questions, and reads Common Mistakes. |
 
-Check-question answers stay visible.
+Check-question answers are hidden until the student selects **Show answer** (v1.3), so students
+think first.
 
 ### 2.3 User Scenarios (acceptance tests for the site as a whole)
 
@@ -89,7 +92,7 @@ Every lesson page has these sections, **in this order**, with these exact headin
 | 3 | **Key Terms** | A table with 2 columns: Term → Simple meaning. A third column, Urdu meaning, is optional (lessons that already have it keep it). Every new word used in the lesson is here. 3–8 terms. |
 | 4 | **Step by Step** | A worked example the student follows. Numbered steps, one action each. Each step (or group) says why you do it, and what you should see after it. |
 | 5 | **Practice** | A new real-life task the student does alone. Numbered steps. Ends with "Check your work: …" saying exactly what a correct result looks like. |
-| 6 | **Check Questions** | Exactly 3 questions. At least one asks the student to *do* or *point to* something, not only answer in words. Each has a model answer, visible for now (see 2.2). |
+| 6 | **Check Questions** | Exactly 3 questions. At least one asks the student to *do* or *point to* something, not only answer in words. Each has a model answer inside a `<details>` box whose `<summary>` is exactly "Show answer" (hidden until selected). |
 | 7 | **Common Mistakes** | 2–5 items. Each item is: Mistake → How to fix it. |
 | 8 | **Sources** | Every official source used to verify the lesson's technical claims (constitution, Section 3). |
 

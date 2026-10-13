@@ -315,9 +315,9 @@ Each lesson has the same 4 tasks:
 
 **Goal**: LO-9. **Independent test**: C3 checks pass for `/module-01-computer-basics/caring-for-your-computer`; the owner confirms AC-1.9-a…c.
 
-- [ ] T048 [US9] **RED** Add `{ url: '/module-01-computer-basics/caring-for-your-computer', title: 'Lesson 1.9: Caring for Your Computer' }` to `aict-guide/tests/lessons.js`; run `npm test`; confirm failure
-- [ ] T049 [US9] **VERIFY** every safety and health statement against an official or recognised source (AC-1.9-a). Ask the owner about lab rules (AC-1.9-b). Record sources for `aict-guide/docs/module-01-computer-basics/caring-for-your-computer.mdx`; stop for owner review
-- [ ] T050 [US9] **GREEN** Write `aict-guide/docs/module-01-computer-basics/caring-for-your-computer.mdx` (`sidebar_position: 9`): the Student Task is a short checklist (AC-1.9-c). Add the link to `index.md`; run `npm test`; all pass
+- [X] T048 [US9] **RED** Add `{ url: '/module-01-computer-basics/caring-for-your-computer', title: 'Lesson 1.9: Caring for Your Computer' }` to `aict-guide/tests/lessons.js`; run `npm test`; confirm failure
+- [X] T049 [US9] **VERIFY** every safety and health statement against an official or recognised source (AC-1.9-a). Ask the owner about lab rules (AC-1.9-b). Record sources for `aict-guide/docs/module-01-computer-basics/caring-for-your-computer.mdx`; stop for owner review
+- [X] T050 [US9] **GREEN** Write `aict-guide/docs/module-01-computer-basics/caring-for-your-computer.mdx` (`sidebar_position: 9`): the Student Task is a short checklist (AC-1.9-c). Add the link to `index.md`; run `npm test`; all pass
 - [ ] T051 [US9] **REVIEW** Owner checks AC-1.9-a…c and the common criteria, then approves `aict-guide/docs/module-01-computer-basics/caring-for-your-computer.mdx`
 
 ---

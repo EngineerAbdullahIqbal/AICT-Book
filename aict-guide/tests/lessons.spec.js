@@ -87,6 +87,24 @@ for (const lesson of LESSONS) {
       });
     });
 
+    // Answers are hidden until the student selects "Show answer" (book-spec v1.3).
+    test('answers-hidden', async ({page}) => {
+      const items = page.locator(
+        'xpath=//article//h2[contains(., "Check Questions")]/following-sibling::ol[1]/li',
+      );
+      await expect(items).toHaveCount(3);
+      for (let i = 0; i < 3; i++) {
+        const details = items.nth(i).locator('details');
+        await expect(details, `question ${i + 1} has a Show answer box`).toHaveCount(1);
+        const summary = details.locator('summary');
+        await expect(summary).toHaveText('Show answer');
+        const answer = details.getByText('Answer:', {exact: false}).first();
+        await expect(answer, `answer ${i + 1} hidden at first`).toBeHidden();
+        await summary.click();
+        await expect(answer, `answer ${i + 1} shown after click`).toBeVisible();
+      }
+    });
+
     test('common-mistakes', async ({page}) => {
       const list = firstBlock(section(await readSections(page), 'Common Mistakes'), ['UL', 'OL']);
       expect(list?.items.length).toBeGreaterThanOrEqual(2);

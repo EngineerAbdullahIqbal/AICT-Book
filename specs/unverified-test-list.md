@@ -28,3 +28,19 @@ Test each one; if it works, tell Claude and the box is removed. If not, tell Cla
 - [ ] **Lesson 1.8: Files, Folders, Saving and Deleting**: Microsoft does not say which app opens a picture when you double-click it. Teacher: before class, check which app opens **My House** on each version. Any app that shows the drawing is fine. To open it in Paint instead: open Paint and press **Ctrl+O** (open an existing picture).
 - [ ] **Lesson 1.4: Starting Up and Shutting Down Safely**: The power button is in a different place on each computer model, so no guide can show it. Teacher: before class, find the power button on the lab computer case and on the monitor. Check that one press starts the computer.
 - [ ] **Lesson 1.5: Using the Mouse**: To close the menu, click once on an empty part of the page. Teacher: check this in the lab computer's web browser before class. If the menu stays open, press the **Esc** key. Microsoft says Esc leaves the current task and closes a menu.
+
+## Module 2: Typing Skills (TypingMaster 10/11)
+
+These TypingMaster steps come from the official TypingMaster **11** manual. Check them in the lab's
+TypingMaster 10/11. Each one already has an "If your screen looks different" box with Notepad as
+the backup.
+
+- [ ] **Lesson 2.1**: opening TypingMaster from the desktop icon; the New User screen ('User name' field, 'Enter'); the Course Selection screen; pressing 'Start Course' (twice); the 'Close' button at the top right.
+- [ ] **Lesson 2.2**: 'Courses' in the right-hand menu opens the last lesson; the next exercise is highlighted; the key to press turns green after 2 seconds; two hands with a green dot show the finger.
+- [ ] **Lesson 2.3**: the '>>' button moves to the next lesson.
+- [ ] **Lessons 2.4 and 2.5**: going on to the next lesson of the Touch Typing Course (may be locked in a trial copy: only the first two lessons open).
+- [ ] **Lesson 2.6**: 'Change course' at the top of the screen; the 'Numbers Course'; 'Start Course' / 'Continue Course' (advanced courses may be locked in a trial copy).
+- [ ] **Lesson 2.7**: continuing the next lesson in the Touch Typing Course.
+- [ ] **Lesson 2.8**: the menu on the right, 'Typing Test', test text (section 1) and Duration (section 2), the 'Start Test' button; Settings → Speed Unit → WPM; in a trial copy the duration is locked to 2 minutes.
+- [ ] **Lesson 2.9**: after saving in Notepad, the file name shows at the top of Notepad.
+- [ ] **Is the lab copy registered?** In a trial copy, only the first two lessons of the Touch Typing Course open after 7 days.

@@ -36,3 +36,4 @@ By the end of Module 1, you can:
 6. [Lesson 1.6: Keyboard Basics](./keyboard-basics.mdx)
 7. [Lesson 1.7: The Operating System and the Desktop](./operating-system-and-desktop.mdx)
 8. [Lesson 1.8: Files, Folders, Saving and Deleting](./files-folders-saving-deleting.mdx)
+9. [Lesson 1.9: Caring for Your Computer](./caring-for-your-computer.mdx)

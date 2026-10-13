@@ -5,6 +5,7 @@ import {MODULE_LESSONS} from './lessons.js';
 import {readSections, section, firstBlock, normaliseUrl} from './page-sections.js';
 
 const OVERVIEWS = [
+  {module: 'module-02-typing-skills', title: 'Module 2: Typing Skills', outcomes: 9},
   {module: 'module-04-ms-word', title: 'Module 4: MS Word', outcomes: 13},
   {module: 'module-07-ms-excel', title: 'Module 7: MS Excel', outcomes: 13},
 ];
