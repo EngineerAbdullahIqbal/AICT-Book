@@ -6,6 +6,7 @@ const M1 = 'module-01-computer-basics';
 const M2 = 'module-02-typing-skills';
 const M4 = 'module-04-ms-word';
 const M5 = 'module-05-ms-powerpoint';
+const M6 = 'module-06-presentation-skills';
 const M7 = 'module-07-ms-excel';
 
 export const MODULE_LESSONS = {
@@ -59,6 +60,17 @@ export const MODULE_LESSONS = {
     lesson(M5, 'simple-animations', 'Lesson 5.10: Simple Animations'),
     lesson(M5, 'speaker-notes-and-printing', 'Lesson 5.11: Speaker Notes and Printing'),
     lesson(M5, 'project-shop-presentation', 'Lesson 5.12: Project: A Presentation for a Real Purpose'),
+  ],
+  [M6]: [
+    lesson(M6, 'what-makes-a-good-presentation', 'Lesson 6.1: What Makes a Good Presentation'),
+    lesson(M6, 'planning-your-talk', 'Lesson 6.2: Planning Your Talk: Beginning, Middle and End'),
+    lesson(M6, 'slides-that-help', 'Lesson 6.3: Slides That Help You Speak'),
+    lesson(M6, 'your-voice', 'Lesson 6.4: Your Voice: Speaking Clearly'),
+    lesson(M6, 'body-language-and-eye-contact', 'Lesson 6.5: Body Language and Eye Contact'),
+    lesson(M6, 'handling-nervousness', 'Lesson 6.6: Handling Nervousness'),
+    lesson(M6, 'practising-with-powerpoint', 'Lesson 6.7: Practising With PowerPoint: Notes, Timings and Presenter View'),
+    lesson(M6, 'answering-questions', 'Lesson 6.8: Answering Questions'),
+    lesson(M6, 'project-three-minute-talk', 'Lesson 6.9: Project: Give a 3-Minute Presentation'),
   ],
   [M7]: [
     lesson(M7, 'starting-excel', 'Lesson 7.1: Starting Excel: Workbooks, Worksheets and Cells'),
