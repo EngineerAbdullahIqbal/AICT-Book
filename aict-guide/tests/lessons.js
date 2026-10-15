@@ -5,6 +5,7 @@ const lesson = (module, slug, title) => ({url: `/${module}/${slug}`, title});
 const M1 = 'module-01-computer-basics';
 const M2 = 'module-02-typing-skills';
 const M4 = 'module-04-ms-word';
+const M5 = 'module-05-ms-powerpoint';
 const M7 = 'module-07-ms-excel';
 
 export const MODULE_LESSONS = {
@@ -44,6 +45,20 @@ export const MODULE_LESSONS = {
     lesson(M4, 'page-setup-and-printing', 'Lesson 4.11: Page Setup and Printing'),
     lesson(M4, 'project-application-letter', 'Lesson 4.12: Project: A Job Application Letter'),
     lesson(M4, 'project-cv', 'Lesson 4.13: Project: Your CV'),
+  ],
+  [M5]: [
+    lesson(M5, 'starting-powerpoint', 'Lesson 5.1: Starting PowerPoint and the PowerPoint Window'),
+    lesson(M5, 'adding-slides-and-text', 'Lesson 5.2: Adding Slides and Typing Text'),
+    lesson(M5, 'saving-and-slide-show', 'Lesson 5.3: Saving, Opening and Showing a Slide Show'),
+    lesson(M5, 'formatting-text-on-slides', 'Lesson 5.4: Formatting Text on Slides'),
+    lesson(M5, 'design-themes', 'Lesson 5.5: Design Themes'),
+    lesson(M5, 'pictures-and-shapes', 'Lesson 5.6: Pictures and Shapes on Slides'),
+    lesson(M5, 'tables-and-charts', 'Lesson 5.7: Tables and Charts on Slides'),
+    lesson(M5, 'organizing-slides', 'Lesson 5.8: Organizing Slides'),
+    lesson(M5, 'slide-transitions', 'Lesson 5.9: Slide Transitions'),
+    lesson(M5, 'simple-animations', 'Lesson 5.10: Simple Animations'),
+    lesson(M5, 'speaker-notes-and-printing', 'Lesson 5.11: Speaker Notes and Printing'),
+    lesson(M5, 'project-shop-presentation', 'Lesson 5.12: Project: A Presentation for a Real Purpose'),
   ],
   [M7]: [
     lesson(M7, 'starting-excel', 'Lesson 7.1: Starting Excel: Workbooks, Worksheets and Cells'),

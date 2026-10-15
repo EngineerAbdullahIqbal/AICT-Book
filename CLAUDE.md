@@ -76,7 +76,8 @@ Run these inside `aict-guide/`:
 - **First release (2026-10-13)**: see `specs/book-spec.md` §9. Priority: Module 4 Word
   (`specs/module-04-ms-word/`), Module 7 Excel (`specs/module-07-ms-excel/`), then the Module 1
   lessons still missing (`specs/module-01-computer-basics/tasks.md`).
-- Word and Excel steps target **Office 2016 / 2019** (Microsoft Support pages).
+- Office steps (Word, Excel, PowerPoint) target **Office 2021** (Microsoft Support pages whose
+  "Applies to" list includes 2021).
 - Each lesson task runs: **RED** (add to `tests/lessons.js`) → **VERIFY** (facts + sources)
   → **GREEN** (write lesson, tests pass). The owner reviews each finished module.
 - Windows steps must cover **Windows 10 and Windows 11**. Use

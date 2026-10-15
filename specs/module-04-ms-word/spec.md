@@ -15,8 +15,9 @@ ends with two documents students will use in real life: a job application letter
 **Prerequisites**: Module 1 (mouse, keyboard, desktop, files and saving). Module 2 typing
 practice helps but is not required.
 
-**Target software**: **Microsoft Word 2016 / Word 2019** on Windows (the lab computers).
-- Every step comes from a Microsoft Support page that applies to Word 2016 or Word 2019.
+**Target software**: **Microsoft Word 2021** on Windows (the lab computers; owner confirmed
+2026-10-14, replacing the earlier Word 2016 / 2019 target).
+- Every step comes from a Microsoft Support page whose "Applies to" list includes Word 2021.
   The page's "Applies to" list must include one of them.
 - A step that can't be confirmed for these versions goes in an UNVERIFIED box
   (constitution §4). The owner tests it on a lab computer.
@@ -77,8 +78,7 @@ The two projects use every earlier skill.
 The same common criteria as Module 1 (`specs/module-01-computer-basics/spec.md` §4, AC-C1 to
 AC-C10), with these changes:
 - **AC-C7**: Key Terms has 2 columns (Term, Simple meaning). No Urdu needed.
-- **AC-W1**: Every Word step cites a Microsoft Support page that applies to Word 2016 or
-  Word 2019, or is in an UNVERIFIED box.
+- **AC-W1**: Every Word step cites a Microsoft Support page that applies to Word 2021, or is in an UNVERIFIED box.
 - **AC-W2**: Every typed practice text uses everyday examples from Pakistan (shop, school,
   family, job). Names and addresses are made up and clearly fictional.
 
@@ -122,7 +122,7 @@ All items are *topics*. The facts and steps are verified when each lesson is wri
 - **Out of scope**: multilevel lists, custom bullets.
 
 ### 4.8 Checking Spelling and Grammar
-- **In scope**: the red and blue underline marks (verify exact colours for 2016/2019), fixing
+- **In scope**: the red and blue underline marks (verify exact colours for 2021), fixing
   a word from the right-click menu, running the spelling and grammar check.
 - **Out of scope**: custom dictionaries, language settings.
 

@@ -1,7 +1,9 @@
 # AICT Course Guide — Book Specification
 
-**Status**: APPROVED v1.3 (owner approved 2026-10-13)
+**Status**: APPROVED v1.4 (owner approved 2026-10-14)
 **Change log**:
+- v1.4 (2026-10-14): the lab has **Office 2021** (owner confirmed). All Office steps target
+  Office 2021. Product screenshots follow Microsoft's screenshot permission rules (§4).
 - v1.3 (2026-10-13): Check Question answers are hidden until the student selects "Show answer"
   (owner decision).
 - v1.2 (2026-10-13): lessons speak to students only. "Teacher Demo" becomes "Step by Step",
@@ -113,7 +115,8 @@ Additional rules:
   If a lesson cannot fit in 60 minutes, it is split into two lessons.
 - **Urdu help**: optional, following `specs/constitution.md`, Section 1. Where Urdu is used, it
   is marked with `lang="ur"`.
-- **Office version**: Microsoft Word and Excel steps target **Office 2016 / Office 2019** (the
+- **Office version**: Microsoft Office steps target **Office 2021** (Word 2021, Excel 2021,
+  PowerPoint 2021; owner confirmed 2026-10-14). Earlier drafts said Office 2016 / Office 2019 (the
   lab computers). Steps are checked against Microsoft Support pages for these versions.
 - **Practice data**: Student Tasks show small tables on the page that students type in
   themselves. No downloadable practice files.
@@ -124,6 +127,13 @@ Additional rules:
   ```mdx
   {/* Screenshot to add: what the screenshot should show. */}
   ```
+
+- **Real screenshots** (v1.4): only the owner's own screenshots of Office 2021, following
+  Microsoft's screenshot rules (whole window, not altered except resized, no splash screens, no
+  people, no third-party content; see `specs/screenshot-list.md`). On the page: the image with
+  alt text, then the line *"Used with permission from Microsoft."*, then a numbered list that
+  names the parts shown. Images live in `aict-guide/static/img/screens/`. Pictures copied from
+  Microsoft's websites are not used.
 
 ## 5. Diagram Standards
 

@@ -17,9 +17,9 @@ The module ends with a project: a student result sheet.
 ribbon, saving and printing; Excel lessons link back to those lessons instead of teaching them
 again in full.
 
-**Target software**: **Microsoft Excel 2016 / Excel 2019** on Windows (the lab computers).
-- Every step comes from a Microsoft Support page whose "Applies to" list includes Excel 2016
-  or Excel 2019.
+**Target software**: **Microsoft Excel 2021** on Windows (the lab computers; owner confirmed
+2026-10-14, replacing the earlier Excel 2016 / 2019 target).
+- Every step comes from a Microsoft Support page whose "Applies to" list includes Excel 2021.
 - A step that can't be confirmed for these versions goes in an UNVERIFIED box
   (constitution §4). The owner tests it on a lab computer.
 
@@ -81,7 +81,7 @@ The same common criteria as Module 1 (`specs/module-01-computer-basics/spec.md` 
 AC-C10), with these changes:
 - **AC-C7**: Key Terms has 2 columns (Term, Simple meaning). No Urdu needed.
 - **AC-E1**: Every Excel step and every function cites a Microsoft Support page that applies to
-  Excel 2016 or Excel 2019, or is in an UNVERIFIED box.
+  Excel 2021, or is in an UNVERIFIED box.
 - **AC-E2**: Every formula in a lesson shows the data it uses and the correct result, so the
   teacher and students can check their answer. Results are calculated and double-checked
   before writing.

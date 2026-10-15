@@ -13,7 +13,7 @@ At the end, you make a student result sheet with totals, averages, percentages a
 **Before you start:** finish Module 1 and Module 4 (Word). Excel uses the same ribbon, and you
 save and print in the same way.
 
-**Software:** these lessons use **Excel 2016** and **Excel 2019**, the versions on the lab
+**Software:** these lessons use **Excel 2021**, the version on the lab
 computers.
 
 ## Learning Outcomes

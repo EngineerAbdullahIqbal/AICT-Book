@@ -1,26 +1,43 @@
 # Steps to test on a lab computer (private list for the owner)
 
 Updated 2026-10-13 after a second, deeper search of Microsoft's documentation. These steps could not
-be confirmed for Office 2016/2019 (or Windows 10/11 for Module 1). On the lesson pages they appear
+be confirmed for Office 2021 (or Windows 10/11 for Module 1). On the lesson pages they appear
 as an "If your screen looks different" box that gives students a confirmed backup way.
 Test each one; if it works, tell Claude and the box is removed. If not, tell Claude what you saw.
 
-## Module 4: MS Word (6)
+## Module 4: MS Word 2021 (6)
 
-- [ ] **Lesson 4.4: Selecting Text: Copy, Cut and Paste**: Step 3 (click to the left of a line) could not be confirmed for Word 2016/2019. Microsoft confirms it only for Word 2010 and for Word 2021 and newer. Student Task step 4 uses it too. Test it on a lab computer before teaching. If it does not work, click right before **B** in **Bread**. Then press **Shift+Down arrow**. Microsoft confirms this way for Word 2016/2019.
-- [ ] **Lesson 4.4: Selecting Text: Copy, Cut and Paste**: Microsoft's Word 2016/2019 pages confirm the **Clipboard** group on the **Home** tab and a **Paste** button. They also say Word has **Cut** and **Copy** buttons on the ribbon. They do not say that these two buttons are in the **Clipboard** group. Check this on a lab computer before teaching. If you cannot find them, teach only the keys: **Ctrl+X**, **Ctrl+C** and **Ctrl+V**.
-- [ ] **Lesson 4.11: Page Setup and Printing**: This step could not be confirmed in official documentation for Word 2016/2019. Test it on a lab computer before teaching. Select **Layout**, then **Size**, then **A4**. Microsoft confirms a **Paper size** list in the **Page Setup** box, but not the **Size** button. If you cannot find **Size**, use the verified way: select **File**, then **Print**. Choose the paper size in the boxes under **Settings**.
-- [ ] **Lesson 4.3: Saving, Closing and Opening a Document**: Microsoft's Word 2016/2019 pages say to choose a folder, but they do not say where the **Documents** folder appears in the **Save As** box. Teacher: open the **Save As** box on a lab computer and look for **Documents** in the list on the left. If you cannot find it, save in the folder the box suggests. Microsoft says the box suggests the place you saved before. Write that folder name on the board.
-- [ ] **Lesson 4.8: Checking Spelling and Grammar**: Steps 7 and 8 could not be fully confirmed for Word 2016/2019. Microsoft names buttons in the Word 2016 pane such as **Ignore**, **Add to AutoCorrect** and **Change All**. It does not say how to use one suggestion. It also does not name the Word 2019 pane. Teacher: press **F7** on a lab computer and note what you see. If it is not clear, fix each mistake by right-clicking it, as in steps 3 and 4.
-- [ ] **Lesson 4.2: Typing and Correcting Text**: The button names in this message could not be confirmed for Word 2016/2019. Microsoft's page names **Yes**, **No** and **Cancel**, and says **No** quits without saving. Your screen may show other names. Teacher: close Word on a lab computer and note the names. Choose the button that closes without saving. **Cancel** keeps Word open.
+Re-checked for **Word 2021** on 2026-10-14. On a Word 2021 lab computer, check:
 
-## Module 7: MS Excel (5)
+- [ ] **Lesson 4.2, step 14**: when you close Word without saving, which buttons does the message show: **Don't Save**, or **Yes / No / Cancel**?
+- [ ] **Lesson 4.3, step 5**: after **File > Save As > Browse**, does **Documents** appear in the list on the left of the Save As box?
+- [ ] **Lesson 4.4, step 12**: are **Cut** and **Copy** in the **Clipboard** group on the **Home** tab?
+- [ ] **Lesson 4.9, step 15**: does pressing **Tab** in the bottom-right cell of a table add a new row?
+- [ ] **Lesson 4.9, step 17**: is the table tab called **Layout** or **Table Layout**? Is **Insert Below** on it?
+- [ ] **Lesson 4.11, step 6**: is there a **Size** button on the **Layout** tab, with **A4** in its list?
+- [ ] *(No box, but worth a look)* **Lesson 4.8**: do **F7** and **Review > Editor** open the **Editor** pane with **Corrections > Spelling / Grammar**?
 
-- [ ] **Lesson 7.5: Number Formats: Money, Percentages and Dates**: For Excel 2016/2019, Microsoft confirms that a typed date gets its default format from the regional date settings in Control Panel. It does not say which order Excel accepts: day/month or month/day. Teacher: before class, type 15/3/2025 in a cell on a lab computer and press **Enter**. Microsoft confirms that a date stored as text stays on the left of the cell. A real date moves to the right. If 15/3/2025 moves to the right, use day/month/year. If it stays on the left, type 3/15/2025 instead and check again.
-- [ ] **Lesson 7.11: Making a Simple Chart**: Excel 2016/2019 shows several kinds of column chart. Microsoft does not confirm which one is already chosen (for example **Clustered Column**) for Excel 2016/2019. Test it on a lab computer before teaching. If the chart you get is not a plain column chart, select the chart. Then, under **Chart Tools**, on the **Design** tab, in the **Type** group, select **Change Chart Type** and choose another column chart. This fallback is confirmed for Excel 2016/2019.
-- [ ] **Lesson 7.11: Making a Simple Chart**: Steps 12 and 13 are confirmed by Microsoft for Excel 2021 and newer only. For Word 2016/2019 charts, Microsoft gives the same two steps. Test them in Excel on a lab computer before teaching. If dragging a sizing handle does not work, select the chart. Under **Chart Tools**, on the **Format** tab, use the **Size** group. This way to resize is confirmed for Excel 2016/2019.
-- [ ] **Lesson 7.10: Sorting Data**: Microsoft's picture shows the button as **Sort...**, but does not say what happens next. Test it on a lab computer before teaching. If a bigger **Sort** box opens, select **OK** to finish the sort.
-- [ ] **Lesson 7.1: Starting Excel: Workbooks, Worksheets and Cells**: Steps 9 and 11 are not confirmed for Excel 2016/2019. Microsoft's Excel glossary says the Name Box "identifies the selected cell". It says the formula bar "displays the constant value or formula stored in the active cell". But that page lists only Excel 2021 and newer. Check steps 9 and 11 on a lab computer before class. - If the Name Box does not show B3, skip step 9. Step 10 (typing an address in the Name Box) is confirmed for Excel 2016/2019. - If Ali does not show in the formula bar, type the number 500 instead. For Excel 2016/2019, Microsoft confirms that the formula bar shows the real value of a number.
+## Module 5: MS PowerPoint 2021 (8)
+
+Written for **PowerPoint 2021** on 2026-10-14. On a PowerPoint 2021 lab computer, check:
+
+- [ ] **Lesson 5.1, step 5**: is **Blank Presentation** on the start screen, or do you select **New** first?
+- [ ] **Lesson 5.3, step 3**: after **File > Save as > Browse**, does **Documents** appear in the Save As box?
+- [ ] **Lesson 5.3, step 10**: if the file is not in the recent list, does **File > Open > Browse > Documents > (file) > Open** work?
+- [ ] **Lesson 5.4, step 8**: is there a **Center** button in the **Paragraph** group of the **Home** tab? (Backup: right-click > **Paragraph** > **Alignment** > **Center** > **OK**; check **OK** too.)
+- [ ] **Lesson 5.5**: does choosing a theme change all slides at once? (Backup: right-click the theme > **Apply to All Slides**.)
+- [ ] **Lesson 5.7, steps 3 and 11**: is the table grid easy to use (backup: **Insert Table**)? Does the chart's sample data have columns C and D, and does dragging the lower-right handle left remove Series 2 and 3? Does the chart worksheet have its own **X** button?
+- [ ] **Lesson 5.9, step 3**: is **Gallery** visible in the transitions row without opening the full list?
+- [ ] **Lesson 5.10, step 3**: is **Fly In** visible in the animations row? (Backup: the **More** arrow.)
+- [ ] *(No box, worth a look)* **5.10**: a small animation marker appears next to the animated picture; **5.11**: the **3 Slides** handout preview shows lines for notes.
+
+## Module 7: MS Excel 2021 (3)
+
+Re-checked for **Excel 2021** on 2026-10-14. On an Excel 2021 lab computer, check:
+
+- [ ] **Lesson 7.4, step 4**: does one click on the main **Merge & Center** button (not its arrow) join A1:C1 and centre the title?
+- [ ] **Lesson 7.10, steps 11 and 14**: after choosing an option in the **Sort Warning** box and selecting **Sort...**, does Excel sort straight away, or open a bigger **Sort** box that needs **OK**?
+- [ ] **Lesson 7.11, step 5**: does **Insert > Recommended Charts > All Charts > Column > OK** give a plain **Clustered Column** chart? Does the backup **Insert Column or Bar Chart** menu show **Clustered Column**?
 
 ## Module 1: Computer Basics (4)
 

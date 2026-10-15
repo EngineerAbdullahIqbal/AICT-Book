@@ -7,6 +7,7 @@ import {readSections, section, firstBlock, normaliseUrl} from './page-sections.j
 const OVERVIEWS = [
   {module: 'module-02-typing-skills', title: 'Module 2: Typing Skills', outcomes: 9},
   {module: 'module-04-ms-word', title: 'Module 4: MS Word', outcomes: 13},
+  {module: 'module-05-ms-powerpoint', title: 'Module 5: MS PowerPoint', outcomes: 12},
   {module: 'module-07-ms-excel', title: 'Module 7: MS Excel', outcomes: 13},
 ];
 

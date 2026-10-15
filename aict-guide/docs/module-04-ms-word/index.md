@@ -12,7 +12,7 @@ At the end, you make two documents for real life: a job application letter and y
 
 **Before you start:** finish Module 1. You need the mouse and the keyboard.
 
-**Software:** these lessons use **Word 2016** and **Word 2019**, the versions on the lab
+**Software:** these lessons use **Word 2021**, the version on the lab
 computers.
 
 ## Learning Outcomes
