@@ -1,0 +1,245 @@
+---
+title: "Lesson 7.22: Joining and Changing Text"
+sidebar_label: "7.22 Joining and Changing Text"
+sidebar_position: 22
+---
+
+import PracticeFile from '@site/src/components/PracticeFile';
+
+## Goal
+
+By the end of this lesson, you can join first and last names into full names, and clean messy
+typed names with TRIM, PROPER, UPPER and LOWER.
+
+## Why It Matters
+
+A school admission list often has the first name and the last name in separate columns. A
+certificate needs the full name, in capital letters. A shop's delivery list is typed in a hurry,
+with extra spaces and Caps Lock mistakes. Fixing 200 names by hand is slow. A few text
+functions fix them all at once.
+
+```mermaid
+flowchart LR
+    accTitle: Joining two names
+    accDescr: The first name and the last name go into one formula. The formula joins them with a space between them and gives the full name.
+    A[First name] --> C[Join with a space]
+    B[Last name] --> C
+    C --> D[Full name]
+```
+
+**Diagram in words:** The first name and the last name go into one formula. It joins them with a
+space in between and gives the full name.
+
+## Key Terms
+
+| Term | Simple meaning |
+|------|----------------|
+| `&` (ampersand) | A sign that joins two pieces of text into one, like glue between two words. |
+| CONCAT | A function that joins pieces of text. You separate the pieces with commas. |
+| UPPER | A function that turns all letters into capital letters: lahore becomes LAHORE. |
+| LOWER | A function that turns all letters into small letters: LAHORE becomes lahore. |
+| PROPER | A function that makes the first letter of each word capital and the rest small: lahore becomes Lahore. |
+| TRIM | A function that removes extra spaces. It keeps one space between words. |
+| Text in quotation marks | Text you type inside a formula, like `" "` for one space. The quotation marks tell Excel it is text. |
+
+You met formulas in [Lesson 7.6](first-formulas.mdx). These functions work on text instead of
+numbers. They do not change the cell you point to. They show a new, changed copy in the formula's
+cell.
+
+## Step by Step
+
+:::info[Practice files]
+
+- <PracticeFile href="/files/excel/joining-and-changing-text/admission-list-starter.xlsx">Download the starter file: Admission List</PracticeFile>.
+  It has both tables already typed in, with the extra spaces in place. Use it to go straight to
+  the formulas.
+- <PracticeFile href="/files/excel/joining-and-changing-text/admission-list-finished.xlsx">Download the finished file: Admission List</PracticeFile>.
+  It has every formula in place. Open it after you finish, to compare with your work.
+
+:::
+
+A school is making its admission list and certificates. Open a new blank workbook
+([Lesson 7.1](starting-excel.mdx)). Type the first table. Leave columns C, D and E empty.
+
+| Row | A | B | C | D | E |
+|-----|---|---|---|---|---|
+| 1 | First name | Last name | Full name | Full name (CONCAT) | For certificate |
+| 2 | Ayesha | Siddiqui | | | |
+| 3 | Hamza | Qureshi | | | |
+| 4 | Mehwish | Anwar | | | |
+| 5 | Usman | Tariq | | | |
+| 6 | Sadia | Malik | | | |
+
+**Join names with &**
+
+1. Select C2. Type `=A2&" "&B2` and press **Enter**. The `" "` is one space inside quotation
+   marks. Without it, the names stick together. *C2 shows Ayesha Siddiqui.*
+2. Drag the fill handle of C2 down to C6, so that every student gets a full name
+   ([Lesson 7.7](fill-handle.mdx)). *C6 shows Sadia Malik.*
+
+**Join names with CONCAT**
+
+CONCAT does the same job. Inside CONCAT, commas separate the parts.
+
+3. Select D2. Type `=CONCAT(A2," ",B2)` and press **Enter**. *D2 shows Ayesha Siddiqui, the same
+   as C2.*
+4. Fill D2 down to D6. *Column D matches column C.*
+
+**Capital letters with UPPER**
+
+Certificates and admission cards often show names in capital letters.
+
+5. Select E2. Type `=UPPER(C2)` and press **Enter**. *E2 shows AYESHA SIDDIQUI.*
+6. Fill E2 down to E6. *E6 shows SADIA MALIK.*
+
+**Clean messy names with TRIM, LOWER and PROPER**
+
+Some names were typed in a hurry. Look at the second table below. Each **·** means one space.
+Press the **Spacebar** once for each dot. Do not type the dot itself. The third name was typed
+with Caps Lock on by mistake.
+
+| Row | A | B | C | D |
+|-----|---|---|---|---|
+| 8 | Name as typed | Spaces removed | Small letters | Clean name |
+| 9 | ··zainab···bibi | | | |
+| 10 | KAMRAN··AKHTAR·· | | | |
+| 11 | ··nOOR·fATIMA | | | |
+
+```mermaid
+flowchart LR
+    accTitle: Cleaning a messy name
+    accDescr: A messy name goes into TRIM, which removes the extra spaces. Then PROPER fixes the capital letters. The result is a clean name.
+    A[Messy name] --> B[TRIM removes spaces]
+    B --> C[PROPER fixes capitals]
+    C --> D[Clean name]
+```
+
+**Diagram in words:** First TRIM removes the extra spaces. Then PROPER makes the first letter of
+each word capital. You get a clean name.
+
+7. Type the second table in rows 8 to 11. Leave columns B, C and D empty in rows 9 to 11.
+8. Select B9. Type `=TRIM(A9)` and press **Enter**. TRIM removes the spaces at the start and end,
+   and keeps one space between words. *B9 shows zainab bibi.*
+9. Fill B9 down to B11. *B10 shows KAMRAN AKHTAR. B11 shows nOOR fATIMA.*
+10. Select C9. Type `=LOWER(B9)` and press **Enter**. Then fill it down to C11. *C9 to C11 show
+    zainab bibi, kamran akhtar and noor fatima.*
+11. Select D9. Type `=PROPER(B9)` and press **Enter**. Then fill it down to D11. *D9 to D11 show
+    Zainab Bibi, Kamran Akhtar and Noor Fatima.*
+
+LOWER makes every letter small. That is not right for names. PROPER gives each word a capital
+first letter, which is how names are written.
+
+You can also put one function inside another. `=PROPER(TRIM(A9))` removes the spaces and fixes
+the capitals in one cell. You will use this in Practice.
+
+These are the correct results:
+
+| Cell | Formula | Result |
+|------|---------|--------|
+| C2 | `=A2&" "&B2` | Ayesha Siddiqui |
+| D2 | `=CONCAT(A2," ",B2)` | Ayesha Siddiqui |
+| E2 | `=UPPER(C2)` | AYESHA SIDDIQUI |
+| C3 to C6 | filled down | Hamza Qureshi, Mehwish Anwar, Usman Tariq, Sadia Malik |
+| B9 to B11 | `=TRIM(A9)`, filled down | zainab bibi, KAMRAN AKHTAR, nOOR fATIMA |
+| C9 to C11 | `=LOWER(B9)`, filled down | zainab bibi, kamran akhtar, noor fatima |
+| D9 to D11 | `=PROPER(B9)`, filled down | Zainab Bibi, Kamran Akhtar, Noor Fatima |
+
+{/* Screenshot to add: The admission list with full names in columns C and D, capital names in column E, and the cleaned names in rows 9 to 11. */}
+
+## Practice
+
+:::info[Practice files]
+
+- <PracticeFile href="/files/excel/joining-and-changing-text/customer-list-starter.xlsx">Download the starter file: Customer List</PracticeFile>.
+  It has the messy names and cities already typed in, with the extra spaces. Use it if you want
+  more time for the formulas.
+- <PracticeFile href="/files/excel/joining-and-changing-text/customer-list-finished.xlsx">Download the finished file: Customer List</PracticeFile>.
+  It shows the end of the task, with Rashid's city changed to rawalpindi. Open it after you finish.
+
+:::
+
+A shop delivers goods to its customers' homes. A helper typed the customer list in a hurry. The
+shop wants neat delivery labels with the name and the city. Type this table. Each **·** means
+one space. Leave columns C, D and E empty.
+
+| Row | A | B | C | D | E |
+|-----|---|---|---|---|---|
+| 1 | Name as typed | City as typed | Clean name | Clean city | Label |
+| 2 | rashid··mehmood | lahore | | | |
+| 3 | ··SAIMA·BATOOL | KARACHI·· | | | |
+| 4 | imran·ali·· | ··multan | | | |
+| 5 | fOZIA·nAZ | Faisalabad | | | |
+| 6 | Tahir···Abbas | peshawar | | | |
+
+1. Open a new blank workbook and type the table. Press the **Spacebar** for each dot.
+2. Select C2. Type `=PROPER(TRIM(A2))` and press **Enter**. TRIM removes the spaces first, then
+   PROPER fixes the capitals. Check: C2 shows Rashid Mehmood.
+3. Fill C2 down to C6. Check: you see Saima Batool, Imran Ali, Fozia Naz and Tahir Abbas.
+4. Select D2. Type `=PROPER(TRIM(B2))` and press **Enter**. Fill it down to D6, so that every
+   city is clean too.
+5. Select E2. Type `=CONCAT(C2,", ",D2)` and press **Enter**. The `", "` puts a comma and a space
+   between the name and the city. Fill E2 down to E6.
+6. Rashid has moved house. Type rawalpindi in B2 and press **Enter**. Watch D2 and E2 change by
+   themselves.
+7. Save the workbook with the name **Customer List**
+   ([Lesson 7.2](entering-editing-saving-data.mdx)), so that your work is kept.
+8. Check your work: C2 to C6 show Rashid Mehmood, Saima Batool, Imran Ali, Fozia Naz and Tahir
+   Abbas. D2 to D6 show Rawalpindi, Karachi, Multan, Faisalabad and Peshawar. E2 shows Rashid
+   Mehmood, Rawalpindi, and E6 shows Tahir Abbas, Peshawar.
+
+## Check Questions
+
+1. A2 holds Hamza and B2 holds Qureshi. What does `=A2&" "&B2` show? What does `=A2&B2` show?
+
+   <details>
+   <summary>Show answer</summary>
+
+   **Answer:** `=A2&" "&B2` shows Hamza Qureshi. `=A2&B2` shows HamzaQureshi, because there is no
+   space between the parts.
+
+   </details>
+
+2. In an empty cell, type `=UPPER("lahore")` and press **Enter**. Then, in another cell, type
+   `=PROPER("lahore")`. What does each cell show?
+
+   <details>
+   <summary>Show answer</summary>
+
+   **Answer:** The first shows LAHORE. The second shows Lahore.
+
+   </details>
+
+3. A name was typed as ··Sana···Javed, with extra spaces. Which function removes them, and what
+   is the result?
+
+   <details>
+   <summary>Show answer</summary>
+
+   **Answer:** TRIM. The result is Sana Javed, with one space between the two words.
+
+   </details>
+
+## Common Mistakes
+
+- **Forgetting the space between the names**, like `=A2&B2` → The names stick together:
+  AyeshaSiddiqui. Add a space in quotation marks: `=A2&" "&B2`.
+- **Typing the space without quotation marks** → Text inside a formula needs quotation marks.
+  Write a space as `" "`, and a comma with a space as `", "`.
+- **Using LOWER for names** → Every letter becomes small: zainab bibi. Use PROPER instead, so
+  that each name starts with a capital letter.
+- **Expecting TRIM to fix capital letters** → TRIM only removes spaces. Use `=PROPER(TRIM(A2))`
+  to do both.
+
+## Sources
+
+*These official pages were checked when this lesson was written.*
+
+- [Microsoft Support, "Combine text from two or more cells into one cell"](https://support.microsoft.com/en-us/office/combine-text-from-two-or-more-cells-into-one-cell-81ba0946-ce78-42ed-b3c3-21340eb164a6) (applies to Excel 2021): "You can combine data from multiple cells into a single cell using the Ampersand symbol (&) or the CONCAT function"; "Type & and use quotation marks with a space enclosed"; "An example formula might be" `=A2&" "&B2`; "Use commas to separate the cells you are combining, use quotation marks to add spaces, commas, other text".
+- [Microsoft Support, "Calculation operators and precedence in Excel"](https://support.microsoft.com/en-us/office/calculation-operators-and-precedence-in-excel-48be406d-4975-4d31-b2b8-7af9e0e2878a) (applies to Excel 2021): "Use the ampersand (&) to join, or concatenate, one or more text strings to produce a single piece of text"; "& (ampersand) Connects, or concatenates, two values to produce one continuous text value."
+- [Microsoft Support, "CONCAT function"](https://support.microsoft.com/en-us/office/concat-function-9b1a9a3f-94ff-41af-9736-694cbd6b4ca2) (applies to Excel 2021): "The CONCAT function combines the text from multiple ranges and/or strings"; syntax `CONCAT(text1, [text2],…)`; example `=CONCAT(B2," ", C2)` "Joins three things: the string in cell B2, a space character, and the value in cell C2", result "Andreas Hauser"; `=B3 & " & " & C3` "Joins the same items as the previous example, but by using the ampersand (&) calculation operator instead of the CONCAT function."
+- [Microsoft Support, "UPPER function"](https://support.microsoft.com/en-us/office/upper-function-c11f29b3-d1a3-4537-8df6-04d0049963d6) (applies to Excel 2021): "Converts text to uppercase"; syntax `UPPER(text)`; "Text can be a reference or text string."
+- [Microsoft Support, "LOWER function"](https://support.microsoft.com/en-us/office/lower-function-3f21df02-a80c-44b2-afaf-81358f9fdeb4) (applies to Excel 2021): "Converts all uppercase letters in a text string to lowercase"; syntax `LOWER(text)`.
+- [Microsoft Support, "PROPER function"](https://support.microsoft.com/en-us/office/proper-function-52a5a283-e8b2-49be-8506-b2887b889f94) (applies to Excel 2021): "Capitalizes the first letter in a text string and any other letters in text that follow any character other than a letter. Converts all other letters to lowercase letters"; example "this is a TITLE" gives "This Is A Title".
+- [Microsoft Support, "TRIM function"](https://support.microsoft.com/en-us/office/trim-function-410388fa-c5df-49c6-b16c-9e5630b479f9) (applies to Excel 2021): "Removes all spaces from text except for single spaces between words"; "=TRIM(C3) removes spaces at beginning and end of contents of cell C3"; "=TRIM(CLEAN(B5)) combines TRIM and CLEAN functions" (one function inside another).
+
+All results were worked out again before writing, letter by letter, from the data in the tables.

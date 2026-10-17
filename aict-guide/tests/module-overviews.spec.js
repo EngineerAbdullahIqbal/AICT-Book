@@ -9,7 +9,7 @@ const OVERVIEWS = [
   {module: 'module-04-ms-word', title: 'Module 4: MS Word', outcomes: 13},
   {module: 'module-05-ms-powerpoint', title: 'Module 5: MS PowerPoint', outcomes: 12},
   {module: 'module-06-presentation-skills', title: 'Module 6: Presentation Skills', outcomes: 9},
-  {module: 'module-07-ms-excel', title: 'Module 7: MS Excel', outcomes: 13},
+  {module: 'module-07-ms-excel', title: 'Module 7: MS Excel', outcomes: 24},
 ];
 
 for (const {module, title, outcomes} of OVERVIEWS) {

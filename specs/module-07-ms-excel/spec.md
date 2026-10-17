@@ -7,6 +7,10 @@
 
 ---
 
+> **v2.0 (2026-10-16, owner approved):** the module grows to 36 lessons with practice files.
+> Part 2 (More Skills, 7.14–7.28) and Part 3 (Real Projects, 7.29–7.36) are specified in
+> `specs/practical-upgrade/spec.md` §4. Lessons 7.2–7.13 also get starter and finished files.
+
 ## 1. Module Summary
 
 Students learn to keep records and do calculations in Microsoft Excel: typing data, making it

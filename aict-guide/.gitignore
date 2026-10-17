@@ -23,3 +23,7 @@ yarn-error.log*
 /test-results
 /playwright-report
 /blob-report
+
+# Working folder for tools/practice-files/verify.py
+tools/practice-files/recalc-work/
+__pycache__/

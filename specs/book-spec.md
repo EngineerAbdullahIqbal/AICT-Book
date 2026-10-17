@@ -1,7 +1,9 @@
 # AICT Course Guide — Book Specification
 
-**Status**: APPROVED v1.4 (owner approved 2026-10-14)
+**Status**: APPROVED v1.5 (owner approved 2026-10-16)
 **Change log**:
+- v1.5 (2026-10-16): practical lessons give **starter and finished practice files** to download
+  (see `specs/practical-upgrade/spec.md`); owner decision.
 - v1.4 (2026-10-14): the lab has **Office 2021** (owner confirmed). All Office steps target
   Office 2021. Product screenshots follow Microsoft's screenshot permission rules (§4).
 - v1.3 (2026-10-13): Check Question answers are hidden until the student selects "Show answer"
@@ -118,8 +120,10 @@ Additional rules:
 - **Office version**: Microsoft Office steps target **Office 2021** (Word 2021, Excel 2021,
   PowerPoint 2021; owner confirmed 2026-10-14). Earlier drafts said Office 2016 / Office 2019 (the
   lab computers). Steps are checked against Microsoft Support pages for these versions.
-- **Practice data**: Student Tasks show small tables on the page that students type in
-  themselves. No downloadable practice files.
+- **Practice data and files** (v1.5): small tables may still be typed from the page to build typing
+  skill. Practical lessons also give a **Practice files** box with a **starter file** (data ready
+  to work on) and a **finished file** (the completed work with real formulas) to download. Rules
+  and checks: `specs/practical-upgrade/spec.md` §3.
 - **Screenshot spots**: where a screenshot would help, the lesson has a **hidden** note for the
   owner (an MDX comment). Students never see it. The owner later replaces it with a real
   screenshot:

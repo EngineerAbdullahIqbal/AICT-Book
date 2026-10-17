@@ -1,0 +1,197 @@
+---
+title: "Lesson 7.28: Freeze Panes for Long Lists"
+sidebar_label: "7.28 Freeze Panes"
+sidebar_position: 28
+---
+
+import PracticeFile from '@site/src/components/PracticeFile';
+
+## Goal
+
+By the end of this lesson, you can keep the headings of a long list on the screen while you
+scroll, and unfreeze them again.
+
+## Why It Matters
+
+A school's list of 50 students is longer than the screen. When you scroll down, the headings go
+off the top. Soon you forget which column is the grade and which is the fee. A shop's daily
+sales register has a column for every day of the month. When you scroll right, the item names
+go off the left. Freezing keeps the headings in view, like the name strip at the top of a
+register.
+
+```mermaid
+flowchart LR
+    accTitle: What Freeze Panes keeps on the screen
+    accDescr: You select cell B2 and choose Freeze Panes. Row 1 stays at the top and column A stays at the left. The rest of the sheet scrolls.
+    A[Select cell B2] --> B[Freeze Panes]
+    B --> C[Row 1 stays]
+    B --> D[Column A stays]
+    C --> E[Rest scrolls]
+    D --> E
+```
+
+**Diagram in words:** With B2 selected, **Freeze Panes** keeps row 1 at the top and column A at
+the left. Everything else scrolls.
+
+## Key Terms
+
+| Term | Simple meaning |
+|------|----------------|
+| Scroll | Move the sheet up, down, left or right on the screen, with the mouse wheel or the scroll bars. |
+| Freeze | Lock some rows or columns so that they stay on the screen while the rest moves. |
+| Pane | A part of the window. Freezing splits the sheet into a fixed part and a moving part. |
+| Freeze Top Row | Keeps row 1 on the screen while you scroll down. |
+| Freeze First Column | Keeps column A on the screen while you scroll right. |
+| Freeze Panes | Keeps the rows above and the columns left of the selected cell. |
+| Unfreeze Panes | Unlocks everything, so that the whole sheet scrolls again. |
+
+Freezing only changes what you see on the screen. It does not change, move or delete any data.
+
+## Step by Step
+
+:::info[Practice files]
+
+- <PracticeFile href="/files/excel/freeze-panes/student-list-starter.xlsx">Download the starter file: Student List</PracticeFile>.
+  It has all 50 students already typed in, so that you do not need to type 50 rows.
+- <PracticeFile href="/files/excel/freeze-panes/student-list-finished.xlsx">Download the finished file: Student List</PracticeFile>.
+  It opens with the top row frozen, like your sheet at the end of the steps. Open it after you
+  finish, to compare with your work.
+
+:::
+
+A school office keeps a list of 50 students, from roll number 1 to 50. The list fills rows 1 to
+51. Here are the first rows, one row in the middle and the last row.
+
+| Row | A | B | C | D | E |
+|-----|---|---|---|---|---|
+| 1 | Roll No | Student Name | Father's Name | Grade | Fee (Rs) |
+| 2 | 1 | Ahmed | Abdul Rauf | 6 | 2000 |
+| 3 | 2 | Aiman | Arshad Ali | 7 | 2200 |
+| 4 | 3 | Ali | Nadeem Akhtar | 8 | 2400 |
+| … | … | … | … | … | … |
+| 31 | 30 | Musa | Imran Saeed | 10 | 2800 |
+| … | … | … | … | … | … |
+| 51 | 50 | Zoya | Tariq Aziz | 10 | 2800 |
+
+**See the problem**
+
+1. Open the starter file.
+2. Scroll down with the mouse wheel until you see row 51. *Row 51 shows 50, Zoya, Tariq Aziz,
+   10 and 2800.* Row 1 has gone off the top. Is 10 the grade or something else? It is hard to
+   tell.
+3. Scroll back up until row 1 is at the top again, so that you start from the headings.
+
+**Freeze the top row**
+
+4. On the **View** tab, select **Freeze Panes**. *A list of three choices opens.*
+5. Select **Freeze Top Row**. This keeps the headings in row 1 on the screen.
+6. Scroll down to row 51 again. *Row 1 stays at the top. You can read Grade above 10 and Fee
+   (Rs) above 2800.*
+
+**Unfreeze, then freeze again**
+
+7. On the **View** tab, select **Freeze Panes**. *The first choice now says **Unfreeze Panes**,
+   because the sheet is frozen.* Select it.
+8. Scroll down. *Row 1 goes off the top again.* Now you know how to undo a freeze.
+9. Scroll back to the top. Freeze the top row again, as in steps 4 and 5, so that the headings
+   stay in view.
+10. Save the workbook with the name **Student List**
+    ([Lesson 7.2](entering-editing-saving-data.mdx)), so that your work is kept.
+
+{/* Screenshot to add: The View tab with the Freeze Panes list open, showing Freeze Panes, Freeze Top Row and Freeze First Column, and the Student List sheet scrolled to row 51 with row 1 still at the top. */}
+
+## Practice
+
+:::info[Practice files]
+
+- <PracticeFile href="/files/excel/freeze-panes/sales-log-starter.xlsx">Download the starter file: Sales Log</PracticeFile>.
+  It has the whole month of sales already typed in: 40 items and 31 days.
+- <PracticeFile href="/files/excel/freeze-panes/sales-log-finished.xlsx">Download the finished file: Sales Log</PracticeFile>.
+  It opens with row 1 and column A frozen, like your sheet at the end of the task. Open it
+  after you finish.
+
+:::
+
+Rehana has a general store. Every evening she writes how many of each item she sold that day.
+Row 1 has the days, from 1 Oct in B1 to 31 Oct in AF1. Column A has the 40 items, in rows 2 to
+41. Here are the corners of the sheet.
+
+| Row | A | B | C | … | AF |
+|-----|---|---|---|---|----|
+| 1 | Item | 1 Oct | 2 Oct | … | 31 Oct |
+| 2 | Atta (10 kg bag) | 2 | 7 | … | 8 |
+| 3 | Basmati rice (kg) | 10 | 3 | … | 13 |
+| … | … | … | … | … | … |
+| 41 | Ballpoint pen | 12 | 8 | … | 3 |
+
+1. Open the starter file.
+2. Scroll right until you see column AF. *The item names in column A have gone off the left.*
+   You cannot tell which item each number belongs to.
+3. Scroll back to column A. On the **View** tab, select **Freeze Panes** > **Freeze First
+   Column**.
+4. Scroll right to column AF again. Column A stays on the left. Check: AF2 shows 8, so Rehana
+   sold 8 bags of atta on 31 Oct.
+5. Scroll down to row 41. Row 1 with the days goes off the top. One frozen column is not enough
+   for this sheet.
+6. On the **View** tab, select **Freeze Panes** > **Unfreeze Panes**.
+7. Scroll back to the top-left corner, so that A1 shows. Select B2. B2 sits below row 1 and to
+   the right of column A.
+8. On the **View** tab, select **Freeze Panes** > **Freeze Panes**. This keeps the rows above
+   B2 and the columns left of B2.
+9. Scroll down to row 41 and right to column AF.
+10. Save the workbook with the name **Sales Log**, so that your work is kept.
+11. Check your work: at cell AF41 you can still see 31 Oct at the top and Ballpoint pen at the
+    left. AF41 shows 3, so Rehana sold 3 pens on 31 Oct. B41 shows 12, the pens sold on 1 Oct.
+
+## Check Questions
+
+1. You want row 1 and column A to stay on the screen. Which cell do you select before you
+   choose **Freeze Panes** > **Freeze Panes**?
+
+   <details>
+   <summary>Show answer</summary>
+
+   **Answer:** B2. Excel keeps the rows above it (row 1) and the columns left of it (column A).
+
+   </details>
+
+2. Point to the button that freezes and unfreezes rows and columns.
+
+   <details>
+   <summary>Show answer</summary>
+
+   **Answer:** On the **View** tab: **Freeze Panes**. When the sheet is frozen, its list shows
+   **Unfreeze Panes**.
+
+   </details>
+
+3. A sheet has a title in row 1 and the headings in row 2. You want both rows to stay. What do
+   you do?
+
+   <details>
+   <summary>Show answer</summary>
+
+   **Answer:** Select A3, the cell below the two rows. Then select **View** > **Freeze Panes** >
+   **Freeze Panes**. **Freeze Top Row** would keep only the title.
+
+   </details>
+
+## Common Mistakes
+
+- **Selecting the wrong cell before Freeze Panes** → The wrong rows or columns stay. Select
+  **Unfreeze Panes**. Then select the cell below the rows and right of the columns you want to
+  keep, and freeze again.
+- **Using Freeze Top Row when the headings are in row 2** → Only row 1 stays. Select A3 and use
+  **Freeze Panes** > **Freeze Panes** instead.
+- **Thinking the data has gone when part of the sheet will not scroll** → The sheet is frozen.
+  Select **View** > **Freeze Panes** > **Unfreeze Panes**.
+
+## Sources
+
+*These official pages were checked when this lesson was written.*
+
+- [Microsoft Support, "Freeze panes to lock rows and columns"](https://support.microsoft.com/en-us/office/freeze-panes-to-lock-rows-and-columns-dab2ffc9-020d-4026-8121-67dd25f2508f) (applies to Excel 2021): "To keep an area of a worksheet visible while you scroll to another area of the worksheet, go to the View tab, where you can Freeze Panes to lock specific rows and columns in place"; "Freeze Panes freezes the rows above and the columns left of the selected cell"; "Select the cell below the rows and to the right of the columns you want to keep visible when you scroll. Select View > Freeze Panes > Freeze Panes"; "On the View tab > Freeze Panes > Unfreeze Panes". The page's picture of the **Freeze Panes** list shows three choices: **Unfreeze Panes**, "Unlock all rows and columns to scroll through the entire worksheet"; **Freeze Top Row**, "Keep the top row visible while scrolling through the rest of the worksheet"; and **Freeze First Column**, "Keep the first column visible while scrolling through the rest of the worksheet". In that picture the sheet is frozen, so the first choice says **Unfreeze Panes** (step 7).
+
+The values were checked again before writing, with Python, from the practice files: row 51 is
+50, Zoya, Tariq Aziz, 10, 2800; row 31 is 30, Musa; in the sales log, AF1 is 31 Oct, AF2 is 8,
+B41 is 12 and AF41 is 3.

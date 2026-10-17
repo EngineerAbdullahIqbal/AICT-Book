@@ -39,6 +39,15 @@ Re-checked for **Excel 2021** on 2026-10-14. On an Excel 2021 lab computer, chec
 - [ ] **Lesson 7.10, steps 11 and 14**: after choosing an option in the **Sort Warning** box and selecting **Sort...**, does Excel sort straight away, or open a bigger **Sort** box that needs **OK**?
 - [ ] **Lesson 7.11, step 5**: does **Insert > Recommended Charts > All Charts > Column > OK** give a plain **Clustered Column** chart? Does the backup **Insert Column or Bar Chart** menu show **Clustered Column**?
 
+## Module 7: MS Excel 2021, Parts 2–3 (new lessons, 2026-10-17)
+
+- [ ] **Lessons 7.24 and 7.34**: after `=C2-B2` (two dates) or the Days Late IF formula, does the answer show as a number, or as a date? (Box backup: **Home > Number Format > General**.)
+- [ ] **Lesson 7.25**: typing `=SORT(...)`, `=FILTER(...)`, `=UNIQUE(...)` spills the results down; the finished file shows these formulas in curly brackets `{ }` (saved as older array formulas). Check both look as the lesson says.
+- [ ] **Lesson 7.26**: **Number Filters > Greater Than...** exists (confirmed only by a Microsoft picture, not its text).
+- [ ] **Lesson 7.27**: **Highlight Cells Rules > Less Than** exists (box backup: **Between**). Note the colour names in the format list.
+- [ ] **Lesson 7.28**: **View > Freeze Panes** lists **Freeze Top Row** and **Freeze First Column** (confirmed only by a Microsoft picture).
+- [ ] **Lesson 7.35**: **Insert > Recommended Charts > All Charts > Column > OK** gives a clustered column chart with two series (Planned and Actual).
+
 ## Module 1: Computer Basics (4)
 
 - [ ] **Lesson 1.8: Files, Folders, Saving and Deleting**: Microsoft's Paint pages for Windows 10 and Windows 11 do not give steps 7 to 10. Teacher: before class, test them on Windows 11 (laptop) and Windows 10 (lab computer). Check where the **Pencil** tool is, the names **File** and **Save as**, and how to choose the folder in the saving box. If **File** or **Save as** is different, press **F12** in Paint instead. Microsoft says F12 saves the picture as a new file, on both versions.
